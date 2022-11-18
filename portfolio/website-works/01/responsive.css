@@ -1,0 +1,320 @@
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  body.active {
+    overflow-y: hidden;
+  }
+  .section-title h1 {
+    font-size: 45px;
+  }
+  /* ---------------------- Header ---------------------- */
+  .logo {
+    float: right;
+  }
+  .gnb {
+    float: none;
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: -270px;
+    margin: 0;
+    padding-top: 100px;
+    padding-left: 30px;
+    transition: 0.3s;
+    z-index: 100;
+  }
+  .gnb.active {
+    left: 0;
+  }
+  .gnb a {
+    display: block;
+    width: 200px;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  .gnb a::before,
+  .gnb a::after {
+    text-align: left;
+  }
+  .gnb a:hover::before {
+    top: -110%;
+  }
+  .trigger {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    top: 27px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 200;
+  }
+  .trigger:before {
+    content: "\e91c";
+    font-family: xeicon;
+  }
+  .trigger.active::before {
+    content: "\e9af";
+    font-weight: 600;
+  }
+
+  /* ---------------------- Section : Welcome ---------------------- */
+  .welcome {
+    background-color: #f9f9f9;
+    height: 90vh;
+  }
+  .main-slider {
+    display: none;
+  }
+  .main-content {
+    width: 100%;
+  }
+  .main-content p {
+    font-size: 20px;
+    padding: 0 20px;
+  }
+  #main-type {
+    padding: 0 20px;
+    font-size: 45px;
+    line-height: 1.2em;
+  }
+
+  /* ---------------------- Section : Brand-Story ---------------------- */
+  .brand-inner {
+    width: 100%;
+  }
+  .brand-content {
+    height: 600px;
+  }
+  .brand-content img {
+    width: 95%;
+  }
+  .brand-content > div {
+    width: 100%;
+  }
+  .brand-photo,
+  .brand-desc {
+    float: none;
+    width: 100%;
+  }
+  .brand-photo {
+    height: 360px;
+  }
+  .brand-desc {
+    padding: 30px 20px 0;
+  }
+  .brand-text {
+    transform: none;
+  }
+  .brand-content.flex-order {
+    display: flex;
+    flex-direction: column;
+  }
+  .brand-content.flex-order > div:first-child {
+    order: 2;
+  }
+  .brand-content.flex-order > div:last-child {
+    order: 1;
+  }
+  .brand-content:nth-child(3) .brand-desc {
+    animation: toLeft 2s 1 both;
+  }
+  .brand-content:nth-child(3) .brand-photo {
+    animation: toRight 2s 1 both;
+  }
+
+  /* ---------------------- Section : Core Value ---------------------- */
+  .value-inner {
+    width: 100%;
+  }
+  .value-content {
+    padding-bottom: 0;
+    animation: toTop 1s 1 both;
+  }
+  .value-content > div {
+    width: 100%;
+    float: none;
+  }
+  .tab-btns,
+  .tab-content {
+    animation: none;
+  }
+  .tab-btns {
+    width: 100%;
+  }
+  .tab-btns label {
+    margin: 0 5px;
+  }
+  .tab-btns label em {
+    width: 110px;
+    height: 110px;
+    padding-top: 14px;
+  }
+  .tab-content {
+    padding: 10px;
+    min-height: 200px;
+    opacity: 1;
+  }
+  .tab-item {
+    text-align: center;
+  }
+
+  /* ---------------------- Section : FAQ ---------------------- */
+  .faq-inner {
+    width: 100%;
+  }
+  .faq-content {
+    padding: 0 20px;
+    animation: toTop 1s 1 both;
+  }
+
+  /* ---------------------- Section : Library ---------------------- */
+  .library-inner {
+    width: 100%;
+  }
+  .library-content {
+    width: 100%;
+    height: 450px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: toTop 1s 1 both;
+  }
+  .library-left,
+  .library-right {
+    animation: none;
+  }
+  .library-left {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+  .library-left iframe {
+    border-radius: 0;
+  }
+  .library-right {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    right: 0;
+    padding: 0;
+    margin-top: -5px;
+    opacity: 1;
+    border-radius: 0;
+    text-align: center;
+  }
+  .library-desc {
+    left: 0;
+    top: 0;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .library-desc p {
+    font-size: 32px;
+    order: 3;
+  }
+  .library-desc .library-btns {
+    order: 2;
+  }
+  .library-desc h3 {
+    order: 1;
+    margin-bottom: 0;
+    text-align: left;
+    padding-left: 40px;
+    height: 70px;
+  }
+  .library-desc p {
+    margin-top: 40px;
+  }
+  .library-desc p span {
+    display: block;
+    padding-left: 28px;
+    letter-spacing: 36px;
+  }
+  .library-btns {
+    width: 100%;
+    margin-top: -20px;
+    padding-left: 20px;
+  }
+  .media-arrow {
+    width: 30%;
+    margin-left: 0;
+  }
+  .media-arrow .prev,
+  .media-arrow .next {
+    float: none;
+    display: inline-block;
+  }
+
+  /* ---------------------- Section : Insta ---------------------- */
+  .insta-slider .slick-slide:nth-child(odd) img,
+  .insta-slider .slick-slide:nth-child(even) img {
+    width: 100%;
+    height: 330px;
+    margin-top: 0;
+  }
+  .insta-slider .slick-slide > div {
+    width: 100% !important;
+  }
+  .insta-slider .slick-track {
+    padding: 0;
+  }
+  .insta-slider .slick-slide img {
+    margin: auto;
+    width: 100% !important;
+    border-radius: 0;
+  }
+  .insta-slider .slick-next {
+    background: #fff !important;
+    left: 89%;
+  }
+  .insta-slider .slick-slide a {
+    animation: toTop 1s 1 both linear;
+  }
+
+  /* ---------------------- Footer ---------------------- */
+  .footer-inner {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-content {
+    padding: 50px 20px;
+  }
+  .footer-content > div {
+    float: none;
+    width: 100%;
+  }
+  .footer-logo,
+  .policy,
+  .sns {
+    margin-bottom: 10px;
+  }
+  .policy,
+  .sns {
+    float: none;
+  }
+  .address {
+    margin-top: 10px;
+  }
+
+  /* ---------------------- Top ---------------------- */
+  .top {
+    position: fixed;
+    bottom: 20px;
+    right: 28px;
+  }
+  .top a::before {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}

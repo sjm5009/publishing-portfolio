@@ -1,0 +1,68 @@
+header
+    .header-inner
+        .logo > a > img
+        nav.gnb > (a*8)
+        .trigger
+
+section.welcome
+    .welcome-inner
+        .main-slider > (img*3)
+        .main-content
+            p > (span*3)
+            p.main-type
+
+section.brand
+    .brand-inner
+        .section-title > h1
+        .brand-content
+            .brand-photo > img
+            .brand-desc
+                .brand-text
+                    span
+                    em
+                    p
+
+section.value
+    .value-inner
+        .section-title > h1
+        .value-content
+            .tab-btns > (label*3)
+            .tab-content > (.tab-item*3)
+
+section.faq
+    .faq-inner
+        .section-title > h1
+        .faq-content
+            .faq-item
+                .title
+                p.desc
+
+section.library
+    .library-inner
+        .section-title > h1
+        .library-content
+            .library-left > (iframe*5)
+            .library-right
+                h3
+                p > span
+                .library-btns
+                    (span.step*5)
+                    .media-arrow
+                        span.prev
+                        span.next
+
+section.insta
+    .insta-inner
+        .section-title > h1
+        .insta-slider
+            (a>img)*11
+
+footer
+    .footer-inner
+        .footer-content
+            .footer-logo > img
+            .copyright
+                .policy-sns
+                    .policy > (span*3)
+                    .sns > (a*5)
+                .address > (span*3)

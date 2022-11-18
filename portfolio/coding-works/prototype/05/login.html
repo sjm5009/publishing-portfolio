@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <script src="/plugin/jquery/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $(".tabs li").click(function () {
+          $(this).siblings().removeClass("active");
+          $(this).addClass("active");
+
+          let tabId = $(this).attr("data-alt");
+          $(`#${tabId}`).siblings().removeClass("active");
+          $(`#${tabId}`).addClass("active");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <section class="login">
+      <ul class="tabs">
+        <li data-alt="basic" class="active">Basic</li>
+        <li data-alt="email">E-mail</li>
+      </ul>
+      <div class="tab-contents">
+        <div id="basic" class="content active">
+          <h1>Basic Login</h1>
+          <div class="form-box">
+            <span>ID</span>
+            <em></em><input type="text" placeholder="Type your ID" />
+          </div>
+          <div class="form-box">
+            <span>Password</span>
+            <em></em><input type="password" placeholder="Type your password" />
+          </div>
+          <button class="login-btn">Login</button>
+        </div>
+        <div id="email" class="content">
+          <h1>Email Login</h1>
+          <div class="form-box">
+            <span>Email</span>
+            <em></em><input type="text" placeholder="ex) json@email.com" />
+          </div>
+          <div class="form-box">
+            <span>Password</span>
+            <em></em><input type="password" placeholder="Type your password" />
+          </div>
+          <button class="login-btn">login</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

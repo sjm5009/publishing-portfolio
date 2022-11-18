@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Modal</title>
+    <link rel="stylesheet" href="./modal.css" />
+    <script src="/plugin/jquery/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $(".btn-modal").click(function () {
+          $(".modal").addClass("active");
+        });
+        $(".btn-close").click(function () {
+          $(".modal").removeClass("active");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <main>
+      <button class="btn-modal"><span>Click</span> Pocketmon !</button>
+    </main>
+    <div class="modal">
+      <div class="modal-inner">
+        <i class="xi-close-thin btn-close"></i>
+        <img src="./img/yadon.png" />
+        <h2>야돈</h2>
+        <p>
+          '가라두구'라 불리는 향신료로 쓰이는 씨앗을 즐겨 먹는다. 세대를
+          거듭하며 이 씨앗의 성분이 몸에 축적된 끝에, 독자적인 모습과 능력을
+          얻게 되었다.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

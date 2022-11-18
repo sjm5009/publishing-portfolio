@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  margin: 0;
+}
+.item {
+  display: inline-block;
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+  position: relative;
+}
+.item > div {
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+}
+.item:nth-child(1) .photo {
+  background-color: rgb(233, 193, 108);
+}
+.item:nth-child(2) .photo {
+  background-color: rgb(108, 173, 233);
+}
+.item:nth-child(3) .photo {
+  background-color: rgb(225, 233, 108);
+}
+.photo {
+  padding: 40px 0;
+  text-align: center;
+  width: inherit;
+  height: inherit;
+  z-index: 10;
+  cursor: pointer;
+}
+.item:hover .photo {
+  top: -50%;
+}
+.item:hover .desc {
+  opacity: 1;
+  top: 50%;
+}
+.photo img {
+  width: 100px;
+  height: 120px;
+}
+.item:first-child .photo img {
+  width: 140px;
+  height: 120px;
+}
+.desc {
+  padding: 10px 20px 25px;
+  text-align: center;
+  background-color: #fff;
+  width: inherit;
+  opacity: 0;
+}
+.desc p {
+  font-weight: 500;
+  line-height: 1.3em;
+  margin-bottom: 12px;
+}
+.desc button {
+  border: none;
+  color: #fff;
+  background-color: rgb(102, 94, 94);
+  padding: 7px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.desc button:hover {
+  background-color: #000;
+}
+@media (max-width: 768px) {
+  .item:nth-child(1) {
+    top: 100px;
+  }
+  .item:nth-child(2) {
+    top: 220px;
+  }
+  .item:nth-child(3) {
+    top: 360px;
+  }
+}

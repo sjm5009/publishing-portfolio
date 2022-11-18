@@ -1,0 +1,147 @@
+@import url(../../cdn.css);
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 17px;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0;
+  height: 100vh;
+  background-color: #fff;
+}
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #eee;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 50px;
+}
+form > div {
+  margin-bottom: 25px;
+}
+form > div:last-child {
+  margin-bottom: 0;
+}
+form > div .title {
+  font-weight: 600;
+  display: inline-block;
+  width: 100px;
+}
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border-color: hotpink;
+  box-shadow: 0 0 5px rgba(255, 128, 191, 0.671);
+}
+input,
+select,
+select option {
+  height: 40px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-sizing: border-box;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: deeppink;
+}
+.box {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 80%;
+}
+.box input,
+.box select {
+  width: 20%;
+}
+.box select {
+  margin-right: 6px;
+  margin-left: -4px;
+}
+.box input {
+  margin-right: 10px;
+}
+.phone select {
+  margin-left: 0px;
+}
+.gender input {
+  vertical-align: middle;
+  margin-top: -1.5px;
+}
+.gender label {
+  margin-right: 10px;
+}
+.hobby input {
+  vertical-align: middle;
+}
+.hobby label {
+  margin-right: 10px;
+}
+.hobby .check-item {
+  display: inline-block;
+}
+.submit {
+  display: block;
+  margin: auto;
+  border: none;
+  background-color: deeppink;
+  color: #eee;
+  padding: 10px 50px;
+  border-radius: 3px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  * {
+    font-size: 14px;
+  }
+  form {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  form > div {
+    margin-bottom: 10px;
+  }
+  form > div .title {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .box {
+    width: 95%;
+  }
+  .box input,
+  .box select {
+    width: 29%;
+  }
+  input,
+  select,
+  select option {
+    height: 4vh;
+  }
+  .id input[type="text"],
+  .name input[type="text"],
+  input[type="password"] {
+    width: 100%;
+  }
+  input[type="checkbox"] {
+    height: 20px;
+  }
+  .check-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .check-item {
+    width: 45%;
+    box-sizing: border-box;
+  }
+  .submit {
+    margin-top: 8%;
+  }
+}

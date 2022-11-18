@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wide Slide</title>
+    <link rel="stylesheet" href="./wide-slide.css" />
+    <script src="/plugin/jquery/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        // 사진 클릭시 modal 생성 이벤트
+        $(".photo").click(function () {
+          let index = $(this).parent().index() + 1;
+          $("#modal-0" + index).fadeIn();
+        });
+        // modal 닫기 버튼 이벤트
+        $(".btn-close").click(function () {
+          $(this).parent().fadeOut();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <main>
+      <input type="radio" id="tab1" name="tabmenu" checked />
+      <input type="radio" id="tab2" name="tabmenu" />
+      <input type="radio" id="tab3" name="tabmenu" />
+      <section class="slide-view">
+        <div class="slide-wrap">
+          <div class="slide-item">
+            <h1>While You Were Sleeping</h1>
+            <div class="photo"></div>
+          </div>
+          <div class="slide-item">
+            <h1>WHITE CHICKS</h1>
+            <div class="photo"></div>
+          </div>
+          <div class="slide-item">
+            <h1>The Curious Case Of BENJAMIN BUTTON</h1>
+            <div class="photo"></div>
+          </div>
+        </div>
+      </section>
+      <section class="btns">
+        <label for="tab1"></label>
+        <label for="tab2"></label>
+        <label for="tab3"></label>
+      </section>
+    </main>
+    <div class="modal" id="modal-01">
+      <i class="xi-close-thin btn-close"></i>
+      <div class="modal-inner">
+        <h2>While You Were Sleeping(1995)</h2>
+        <p>
+          While You Were Sleeping is a 1995 American romantic comedy film
+          directed by Jon Turteltaub and written by Daniel G. Sullivan and
+          Fredric Lebow. It stars Sandra Bullock as Lucy, a Chicago Transit
+          Authority token collector, and Bill Pullman as Jack, the brother of a
+          man whose life she saves, along with Peter Gallagher as Peter, the man
+          who is saved, Peter Boyle and Glynis Johns as members of Peter's
+          family, and Jack Warden as longtime family friend and neighbor.
+        </p>
+      </div>
+    </div>
+    <div class="modal" id="modal-02">
+      <i class="xi-close-thin btn-close"></i>
+      <div class="modal-inner">
+        <h2>WHITE CHICKS(2004)</h2>
+        <p>
+          White Chicks is a 2004 American comedy film directed by Keenen Ivory
+          Wayans. It stars Shawn Wayans and Marlon Wayans as two black FBI
+          agents who go undercover as women to solve a kidnapping plot. The film
+          was theatrically released in the United States on June 23, 2004, and
+          grossed $113.1 million worldwide against a budget of $37 million. The
+          film was nominated for five Razzies, including Worst Picture. Despite
+          negative critical reception, it performed well at the box office, and
+          in the following years, it has come to be regarded as a cult classic.
+        </p>
+      </div>
+    </div>
+    <div class="modal" id="modal-03">
+      <i class="xi-close-thin btn-close"></i>
+      <div class="modal-inner">
+        <h2>The Curious Case Of BENJAMIN BUTTON <br />(2008)</h2>
+        <p>
+          The Curious Case of Benjamin Button is a 2008 American fantasy
+          romantic drama film directed by David Fincher.The storyline by Eric
+          Roth and Robin Swicord is loosely based on the 1922 short story of the
+          same name by F. Scott Fitzgerald. The film stars Brad Pitt as a man
+          who ages in reverse and Cate Blanchett as the love interest throughout
+          his life. The film also stars Taraji P. Henson, Mahershala Ali, Julia
+          Ormond, Jason Flemyng, Elias Koteas, and Tilda Swinton.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

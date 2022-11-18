@@ -1,0 +1,371 @@
+main
+    // web header
+    header
+        .main-menu
+            .inner-wrap
+                .logo
+                    a > img
+                nav.menu
+                    a * 5
+                .util-menu
+                    (a > img) * 3
+        .sub-menu
+            .inner-wrap
+                ul.sub-menu-box#kolon-sport
+                    (
+                        li.sub-menu-item
+                            h2 + a
+                    ) * n
+                ul.sub-menu-box#outdoor
+                    (
+                        li.sub-menu-item
+                            h2 + a
+                    ) * n
+                ul.sub-menu-box#shop
+                    (
+                        li.sub-menu-item
+                            h2 + a
+                    ) * n
+                ul.sub-menu-box#issue
+                    (
+                        li.sub-menu-item
+                            h2 + a
+                    ) * n
+                ul.sub-menu-box#special
+                    li.sub-menu-item
+                        (a > h3) * 3
+
+    // mobile header
+    header
+        .mobile-menu
+            .modal-inner.menu-view
+                .menu-steps
+                    .menu-step.step1
+                        .mobile-menu-items-list
+                            .menu-gnb-title > h1 > img
+                            (.mobile-menu-item > a) * 5
+                    .menu-step.step2
+                        .mobile-menu-items-list
+                            .menu-gnb-title.prev > h1
+                            (.mobile-menu-item > a) * 3
+                        .mobile-menu-items-list
+                            .menu-gnb-title.prev > h1
+                            ul.mobile-menu-list
+                                li.super > a
+                                li.sub > a * 3
+                        .mobile-menu-items-list
+                            .menu-gnb-title.prev > h1
+                            (.mobile-menu-item > a) * 5
+                        .mobile-menu-items-list
+                            .menu-gnb-title.prev > h1
+                            (ul.mobile-menu-list
+                                li.super > a
+                                li.sub > a) * 3
+                        .mobile-menu-items-list
+                            .menu-gnb-title.prev > h1
+                                ul.mobile-menu-list
+                                li.super > a * 3
+                    .menu-step.step3
+                        (
+                            .mobile-menu-items-list
+                                .menu-gnb-title.prev > h1
+                                a * n
+                        ) * 8
+        .trigger
+
+    section.search-area
+        .search-box
+            span.select-box
+                select.search-select
+                    option * 4
+            span.text-box
+                input.search-text
+                i#clear-btn
+            button.search-btn.web
+            button.search-btn.mobile
+        .keyword-box
+            .recent-keyword
+                h2.keyword-title
+                .keywords
+                    ul.keyword-list > li
+            .notice-keyword
+                h2.keyword-title
+                .keywords
+                    ul.keyword-list
+                        li > span.rank > a
+                        li > span.rank > a
+                        li > span.rank > a
+                        li > span > a
+                        li > span > a
+                    ul.keyword-list
+                        (li > span > a) * 5
+
+    section.main-ad
+        .swiper.main-ad-swiper
+            .swiper-wrapper
+                .swiper-slide
+                    a.ad-box
+                        .ad-text
+                            p.ad-type
+                            span * 2
+                .swiper-slide
+                    a.ad-box
+                        .ad-text
+                            p.ad-type
+                            span * 2
+                .swiper-slide
+                    a.ad-box
+                        .ad-text
+                            p.ad-type
+                            span * 2
+            .swiper-pagination
+
+    section.best-item
+        .inner-wrap
+            h1
+            input[name="tabmenu"]#best
+            input[name="tabmenu"]#clothes
+            input[name="tabmenu"]#shoes
+            input[name="tabmenu"]#acc
+            .best-tabs 
+                label[for="best"]
+                label[for="clothes"]
+                label[for="shoes"]
+                label[for="acc"]
+            .best-list.best
+                (
+                    a.best-goods
+                    .image-box
+                        img
+                        img.hover-img
+                    p.title
+                    span.price > span * n
+                    .color-box
+                ) * 8
+            .best-list.clothes
+                (
+                    a.best-goods
+                    .image-box
+                        img
+                        img.hover-img
+                    p.title
+                    span.price > span * n
+                    .color-box
+                ) * 8
+            .best-list.shoes
+                (
+                    a.best-goods
+                    .image-box
+                        img
+                        img.hover-img
+                    p.title
+                    span.price > span * n
+                    .color-box
+                ) * 8
+            .best-list.acc
+                (
+                    a.best-goods
+                    .image-box
+                        img
+                        img.hover-img
+                    p.title
+                    span.price > span * n
+                    .color-box
+                ) * 8
+            button#more-btn > i
+
+    section.main-banner
+        .swiper.banner-swiper
+            .swiper-wrapper
+                .swiper-slide * 3
+            .swiper-button-next.banner-next-btn
+            .swiper-button-prev.banner-prev-btn
+            .swiper-pagination.banner-pagination
+            i
+
+    section.collection
+        .inner-wrap
+            .title-wrap
+                h1
+                .tab-btns > a * 3
+            .collection-wrap
+                .collection-item#outer
+                    .photo
+                        a > img
+                    .desc
+                        .desc-title
+                            h1
+                            p
+                        .swiper.goods-swiper
+                            .swiper-wrapper
+                                (
+                                    .swiper-slide > a
+                                    .photo-box
+                                        img.front
+                                        img.back
+                                    .info-box
+                                        h2.name
+                                        span.price
+                                ) * n
+                            .swiper-scrollbar
+                .collection-item#vest
+                    .photo
+                        a > img
+                    .desc
+                        .desc-title
+                            h1
+                            p
+                        .swiper.goods-swiper
+                            .swiper-wrapper
+                                (
+                                    .swiper-slide > a
+                                    .photo-box
+                                        img.front
+                                        img.back
+                                    .info-box
+                                        h2.name
+                                        span.price
+                                ) * n
+                            .swiper-scrollbar
+                .collection-item#accessory
+                    .photo
+                        a > img
+                    .desc
+                        .desc-title
+                            h1
+                            p
+                        .swiper.goods-swiper
+                            .swiper-wrapper
+                                (
+                                    .swiper-slide > a
+                                    .photo-box
+                                        img.front
+                                        img.back
+                                    .info-box
+                                        h2.name
+                                        span.price
+                                ) * n
+                            .swiper-scrollbar
+
+    section.styling
+        .inner-wrap
+            .title-wrap
+                h1
+            .swiper.style-swiper
+                .swiper-wrapper
+                    .swiper-slide
+                        .style-item
+                            .goods.web
+                                (
+                                    a.goods-item
+                                    .img-box
+                                        .front
+                                        .back
+                                    .info-box
+                                        h2.name
+                                        span.price
+                                ) * 4
+                            .photo.web > img
+                            .goods.mobile
+                                .swiper-wrapper
+                                    (
+                                        .swiper-slide
+                                        a.goods-items
+                                            .img-box
+                                                .front
+                                                .back
+                                            .info-box
+                                                h2.name
+                                                span.price
+                                    ) * 4
+                                .swiper-scrollbar.style-goods-scrollbar
+                            .goods.mobile > img
+                    .swiper-slide
+                        .style-item
+                            .goods.web
+                                (
+                                    a.goods-item
+                                    .img-box
+                                        .front
+                                        .back
+                                    .info-box
+                                        h2.name
+                                        span.price
+                                ) * 4
+                            .photo.web > img
+                            .goods.mobile
+                                .swiper-wrapper
+                                    (
+                                        .swiper-slide
+                                        a.goods-items
+                                            .img-box
+                                                .front
+                                                .back
+                                            .info-box
+                                                h2.name
+                                                span.price
+                                    ) * 4
+                                .swiper-scrollbar.style-goods-scrollbar
+                            .goods.mobile > img
+                .swiper-button-next.style-next-btn
+                .swiper-button-prev.style-prev-btn
+                .swiper-pagination.style-pagination
+
+    section.quick-menu
+        .inner-wrap
+            a.menu-item
+                .back
+                .front > span * 2
+            a.menu-item
+                .back
+                .front > span * 2
+            a.menu-item
+                .back
+                .front > span * 2
+
+    section.video
+        .inner-wrap
+            .swiper.video-swiper
+                .swiper-wrapper
+                    .swiper-slide > iframe
+                    .swiper-slide > iframe
+                    .swiper-slide > iframe
+                .swiper-button-next.video-next-btn
+                .swiper-button-prev.video-prev-btn
+
+    footer
+        .inner-wrap
+            .footer-top
+                .footer-logo > img
+                ul.footer-tab
+                    (li > a) * 7
+                .company-info
+                    .mobile-comp-name
+                    address
+                        strong
+                            em + b + a
+                        span
+                            a * 2
+                .copyright
+            .footer-bottom
+                .footer-util
+                    ul.footer-tab
+                        (li > a) * 7
+                    .footer-lang
+                        span
+                        .footer-select
+                            button
+                            ul.footer-select-list
+                                li > a
+                    .footer-site
+                        span
+                        .footer-select
+                            button
+                            ul.footer-select-list
+                                (li > a) * 5
+            .footer-side
+                .sns > a * 3
+                .cs-info
+                    em + strong + span
+
+    aside.top-btn > a

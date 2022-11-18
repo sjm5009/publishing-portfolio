@@ -1,0 +1,62 @@
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "GmarketSansMedium";
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fff;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lnb {
+  width: 300px;
+  text-align: center;
+}
+.lnb-btn {
+  background-color: #10af29;
+  width: inherit;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.lnb-btn i {
+  vertical-align: text-bottom;
+  margin-right: 8px;
+  font-size: 31px;
+}
+.lnb-menu {
+  background-color: #0abb26;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.lnb-menu a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+.lnb-menu a:last-child {
+  border-color: transparent;
+}
+.lnb-btn:hover + .lnb-menu,
+.lnb-menu:hover {
+  opacity: 1;
+  visibility: visible;
+}

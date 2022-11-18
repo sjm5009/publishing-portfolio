@@ -1,0 +1,36 @@
+/* Font */
+넥슨 Lv.2 고딕 Regular
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+font-family: 'NEXON Lv2 Gothic';
+
+에스코어드림Reg
+@font-face {
+     font-family: 'S-CoreDream-4Regular';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+font-family: 'S-CoreDream-4Regular';
+
+Lexend
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+font-family: 'Lexend', sans-serif;
+
+https://www.instagram.com/p/Cgizm8SFglp/
+https://www.instagram.com/p/CggMAb0lIjK/
+https://www.instagram.com/p/CgeQ5KOvvjE/
+https://www.instagram.com/p/CgbXD85uKa3/
+https://www.instagram.com/p/CgUFHj5FBs_/
+https://www.instagram.com/p/CgPDyoqlf2Q/
+https://www.instagram.com/p/CgOo8UkOc1m/
+https://www.instagram.com/p/CgMgHzsvj5k/
+https://www.instagram.com/p/CgBwFo0ONVR/
+https://www.instagram.com/p/Cf_WRPhvOoG/
+https://www.instagram.com/p/Cf8qT1SOQZ7/
+https://www.instagram.com/p/Cf6fYKRPnGW/
+https://www.instagram.com/p/Cf3igj-PwIM/

@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KOLON SPORT (코오롱스포츠)</title>
+    <!-- Jquery -->
+    <script src="/plugin/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Jquery Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- TypeIt JS-->
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <script src="./custom.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Header -->
+      <header>
+        <div class="main-menu">
+          <div class="inner-wrap">
+            <div class="logo">
+              <a href="#">
+                <img src="./images/logo.png" alt="코오롱스포츠 로고" />
+              </a>
+            </div>
+            <nav class="menu">
+              <a href="#none" data-alt="kolon-sport">KOLON SPORT</a>
+              <a href="#none" data-alt="outdoor">OUTDOOR</a>
+              <a href="#none" data-alt="shop">SHOP</a>
+              <a href="#none" data-alt="issue">ISSUE</a>
+              <a href="#none" data-alt="special">SPECIAL</a>
+            </nav>
+            <div class="util-menu">
+              <a href="javascript:showSearchForm();">
+                <img src="./images/header/ico_search.png" alt="검색" />
+              </a>
+              <a href="#my">
+                <img src="./images/header/ico_my.png" alt="마이페이지" />
+              </a>
+              <a href="#bag">
+                <img src="./images/header/ico_bag.png" alt="장바구니" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="sub-menu">
+          <div class="inner-wrap">
+            <ul id="kolon-sport" class="sub-menu-box">
+              <li class="sub-menu-item">
+                <h2>HISTORY</h2>
+                <a href="#none">브랜드 히스토리</a>
+                <a href="#none">남극에 가다</a>
+                <a href="#none">도전의 기록</a>
+                <a href="#none">AMBASSADORS</a>
+              </li>
+              <li class="sub-menu-item">
+                <h2>TECHNOLOGY</h2>
+                <a href="#none">LIFETECH</a>
+                <a href="#none">LTEKS</a>
+                <a href="#none">HERACLA:CE</a>
+                <a href="#none">FREEDOM TENT</a>
+                <a href="#none">WEATHER MONSTER</a>
+              </li>
+              <li class="sub-menu-item">
+                <h2>SUSTAINABILITY</h2>
+                <a href="#none">NOACH PROJECT</a>
+              </li>
+            </ul>
+            <ul id="outdoor" class="sub-menu-box">
+              <li class="sub-menu-item">
+                <h2>ALL</h2>
+                <a href="#none">#Performance_Shoes</a>
+                <a href="#none">#Camping_Gear</a>
+                <a href="#none">#Expert_Wear</a>
+              </li>
+            </ul>
+            <ul id="shop" class="sub-menu-box">
+              <li class="sub-menu-item">
+                <h2>MEN</h2>
+                <a href="#none">아우터</a>
+                <a href="#none">상의</a>
+                <a href="#none">하의</a>
+                <a href="#none">홈웨어</a>
+              </li>
+              <li class="sub-menu-item">
+                <h2>WOMEN</h2>
+                <a href="#none">아우터</a>
+                <a href="#none">상의</a>
+                <a href="#none">하의</a>
+                <a href="#none">홈웨어</a>
+              </li>
+              <li class="sub-menu-item">
+                <h2>SHOES</h2>
+                <a href="#none">하이킹</a>
+                <a href="#none">트레킹화</a>
+                <a href="#none">워킹화</a>
+                <a href="#none">로드맵</a>
+                <a href="#none">스니커즈</a>
+                <a href="#none">샌들/슬라이드</a>
+              </li>
+              <li class="sub-menu-item">
+                <h2>BAG</h2>
+                <a href="#none">트레킹백</a>
+                <a href="#none">라이프스타일</a>
+                <a href="#none">레저백</a>
+              </li>
+              <li class="sub-menu-item">
+                <h2>ACC</h2>
+                <a href="#none">모자</a>
+                <a href="#none">장갑</a>
+                <a href="#none">스틱</a>
+                <a href="#none">양말</a>
+                <a href="#none">계절용품/기타소품</a>
+                <a href="#none">솟솟GOODS</a>
+              </li>
+            </ul>
+            <ul id="issue" class="sub-menu-box">
+              <li class="sub-menu-item">
+                <h2>MAGAZINE</h2>
+                <a href="#none">ALL</a>
+              </li>
+              <li class="sub-menu-item">
+                <h2>STORES</h2>
+                <a href="#none">매장정보</a>
+              </li>
+              <li class="sub-menu-item">
+                <h2>EXHIBITION</h2>
+                <a href="#none">전시정보/일정</a>
+              </li>
+            </ul>
+            <ul id="special" class="sub-menu-box">
+              <li class="sub-menu-item">
+                <a href="#none"><h3></h3></a>
+                <a href="#none"><h3></h3></a>
+                <a href="#none"><h3></h3></a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="#none"><h3></h3></a>
+                <a href="#none"><h3></h3></a>
+                <a href="#none"><h3></h3></a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="#none"><h3>이벤트</h3></a>
+                <a href="#none"><h3>기획전</h3></a>
+                <a href="#none"><h3>베스트 리뷰</h3></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mobile-menu">
+          <div class="modal-inner menu-view">
+            <div class="menu-steps">
+              <nav class="menu-step step1">
+                <div class="mobile-menu-items-list">
+                  <div class="menu-gnb-title">
+                    <h1>
+                      <img src="./images/logo.png" alt="코오롱스포츠 로고" />
+                    </h1>
+                  </div>
+                  <div class="mobile-menu-item" data-path="2-1">
+                    <a href="#none">KOLON SPORT</a>
+                  </div>
+                  <div class="mobile-menu-item" data-path="2-2">
+                    <a href="#none">OUTDOOR</a>
+                  </div>
+                  <div class="mobile-menu-item" data-path="2-3">
+                    <a href="#none">SHOP</a>
+                  </div>
+                  <div class="mobile-menu-item" data-path="2-4">
+                    <a href="#none">ISSUE</a>
+                  </div>
+                  <div class="mobile-menu-item" data-path="2-5">
+                    <a href="#none">SPECIAL</a>
+                  </div>
+                </div>
+              </nav>
+              <nav class="menu-step step2">
+                <div id="2-1" class="mobile-menu-items-list">
+                  <div class="menu-gnb-title prev">
+                    <h1>KOLON SPORT</h1>
+                  </div>
+                  <div class="mobile-menu-item" data-path="2-1-1">
+                    <a href="#none">HISTORY</a>
+                  </div>
+                  <div class="mobile-menu-item" data-path="2-1-2">
+                    <a href="#none">TECHNOLOGY</a>
+                  </div>
+                  <div class="mobile-menu-item" data-path="2-1-3">
+                    <a href="#none">SUSTAINABILITY</a>
+                  </div>
+                </div>
+                <div id="2-2" class="mobile-menu-items-list">
+                  <div class="menu-gnb-title prev">
+                    <h1>OUTDOOR</h1>
+                  </div>
+                  <ul class="mobile-menu-list">
+                    <li class="super">
+                      <a href="#none">ALL</a>
+                    </li>
+                    <li class="sub">
+                      <a href="#none">#Performance_Shoes</a>
+                      <a href="#none">#Camping_Gear</a>
+                      <a href="#none">#Expert_Wear</a>
+                    </li>
+                  </ul>
+                </div>
+                <div id="2-3" class="mobile-menu-items-list">
+                  <div class="menu-gnb-title prev">
+                    <h1>SHOP</h1>
+                  </div>
+                  <div class="mobile-menu-item" data-path="2-3-1">
+                    <a href="#none">MEN</a>
+                  </div>
+                  <div class="mobile-menu-item" data-path="2-3-2">
+                    <a href="#none">WOMEN</a>
+                  </div>
+                  <div class="mobile-menu-item" data-path="2-3-3">
+                    <a href="#none">SHOES</a>
+                  </div>
+                  <div class="mobile-menu-item" data-path="2-3-4">
+                    <a href="#none">BAG</a>
+                  </div>
+                  <div class="mobile-menu-item" data-path="2-3-5">
+                    <a href="#none">ACC</a>
+                  </div>
+                </div>
+                <div id="2-4" class="mobile-menu-items-list">
+                  <div class="menu-gnb-title prev">
+                    <h1>ISSUE</h1>
+                  </div>
+                  <ul class="mobile-menu-list">
+                    <li class="super">
+                      <a href="#none">MAGAZINE</a>
+                    </li>
+                    <li class="sub">
+                      <a href="#none">ALL</a>
+                    </li>
+                  </ul>
+                  <ul class="mobile-menu-list">
+                    <li class="super">
+                      <a href="#none">STORES</a>
+                    </li>
+                    <li class="sub">
+                      <a href="#none">매장정보</a>
+                    </li>
+                  </ul>
+                  <ul class="mobile-menu-list">
+                    <li class="super">
+                      <a href="#none">EXHIBITION</a>
+                    </li>
+                    <li class="sub">
+                      <a href="#none">전시정보/일정</a>
+                    </li>
+                  </ul>
+                </div>
+                <div id="2-5" class="mobile-menu-items-list">
+                  <div class="menu-gnb-title prev">
+                    <h1>SPECIAL</h1>
+                  </div>
+                  <ul class="mobile-menu-list">
+                    <li class="super">
+                      <a href="#none">이벤트</a>
+                      <a href="#none">기획전</a>
+                      <a href="#none">베스트 리뷰</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <nav class="menu-step step3">
+                <div id="2-1-1" class="mobile-menu-items-list">
+                  <div class="menu-gnb-title prev">
+                    <h1>HISTORY</h1>
+                  </div>
+                  <a href="#none">브랜드 히스토리</a>
+                  <a href="#none">남극에 가다</a>
+                  <a href="#none">도전의 기록</a>
+                  <a href="#none">AMBASSADORS</a>
+                </div>
+                <div id="2-1-2" class="mobile-menu-items-list">
+                  <div class="menu-gnb-title prev">
+                    <h1>TECHNOLOGY</h1>
+                  </div>
+                  <a href="#none">LIFETECH</a>
+                  <a href="#none">LTEKS</a>
+                  <a href="#none">HERACLA:CE</a>
+                  <a href="#none">FREEDOM TENT</a>
+                  <a href="#none">WEATHER MONSTER</a>
+                </div>
+                <div id="2-1-3" class="mobile-menu-items-list">
+                  <div class="menu-gnb-title prev">
+                    <h1>SUSTAINABILITY</h1>
+                  </div>
+                  <a href="#none">NOACH PROJECT</a>
+                </div>
+                <div id="2-3-1" class="mobile-menu-items-list">
+                  <div class="menu-gnb-title prev">
+                    <h1>MEN</h1>
+                  </div>
+                  <a href="#none">아우터</a>
+                  <a href="#none">상의</a>
+                  <a href="#none">하의</a>
+                  <a href="#none">홈웨어</a>
+                </div>
+                <div id="2-3-2" class="mobile-menu-items-list">
+                  <div class="menu-gnb-title prev">
+                    <h1>WOMEN</h1>
+                  </div>
+                  <a href="#none">아우터</a>
+                  <a href="#none">상의</a>
+                  <a href="#none">하의</a>
+                  <a href="#none">홈웨어</a>
+                </div>
+                <div id="2-3-3" class="mobile-menu-items-list">
+                  <div class="menu-gnb-title prev">
+                    <h1>SHOES</h1>
+                  </div>
+                  <a href="#none">하이킹</a>
+                  <a href="#none">트레킹화</a>
+                  <a href="#none">워킹화</a>
+                  <a href="#none">로드맵</a>
+                  <a href="#none">스니커즈</a>
+                  <a href="#none">샌들/슬라이드</a>
+                </div>
+                <div id="2-3-4" class="mobile-menu-items-list">
+                  <div class="menu-gnb-title prev">
+                    <h1>BAG</h1>
+                  </div>
+                  <a href="#none">트레킹백</a>
+                  <a href="#none">라이프스타일</a>
+                  <a href="#none">레저백</a>
+                </div>
+                <div id="2-3-5" class="mobile-menu-items-list">
+                  <div class="menu-gnb-title prev">
+                    <h1>ACC</h1>
+                  </div>
+                  <a href="#none">모자</a>
+                  <a href="#none">장갑</a>
+                  <a href="#none">스틱</a>
+                  <a href="#none">양말</a>
+                  <a href="#none">계절용품/기타소품</a>
+                  <a href="#none">솟솟GOODS</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="trigger"><span></span><span></span><span></span></div>
+      </header>
+      <!-- Section : Search Area -->
+      <section class="search-area">
+        <div class="search-box">
+          <span class="select-box">
+            <select class="search-select">
+              <option value="">전체</option>
+              <option value="men">MEN</option>
+              <option value="women">WOMEN</option>
+              <option value="kids">KIDS</option>
+            </select>
+          </span>
+          <span class="text-box">
+            <input class="search-text" type="text" placeholder="상품명 검색" />
+            <i id="clear-btn" class="xi-close-min"></i>
+          </span>
+          <button class="search-btn web">검색</button>
+          <button class="search-btn mobile"></button>
+        </div>
+        <div class="keyword-box">
+          <div class="recent-keyword">
+            <h2 class="keyword-title">최근 검색어</h2>
+            <div class="keywords">
+              <ul class="keyword-list">
+                <li class="nothing">최근 검색어가 없습니다.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="notice-keyword">
+            <h2 class="keyword-title">주목해야 될 아이템</h2>
+            <div class="keywords">
+              <ul class="keyword-list">
+                <li><span class="rank">1</span><a href="#none">무브</a></li>
+                <li><span class="rank">2</span><a href="#none">김태리</a></li>
+                <li><span class="rank">3</span><a href="#none">트라이포드미드</a></li>
+                <li><span>4</span><a href="#none">윈드체이서</a></li>
+                <li><span>5</span><a href="#none">등산화</a></li>
+              </ul>
+              <ul class="keyword-list">
+                <li><span>6</span><a href="#none">고어텍스</a></li>
+                <li><span>7</span><a href="#none">바람막이</a></li>
+                <li><span>8</span><a href="#none">캠핑</a></li>
+                <li><span>9</span><a href="#none">플리스</a></li>
+                <li><span>10</span><a href="#none">LUCKY CHOUETTE</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section : Main Ad -->
+      <section class="main-ad">
+        <div class="swiper main-ad-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a class="ad-box" href="#ad">
+                <div class="ad-text">
+                  <p id="main-type-1" class="ad-type"></p>
+                  <span>기분좋은 가벼움, 고급스러운 외관</span>
+                  <span>세로 퀄팅의 도심형 다운코트</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="ad-box" href="#ad">
+                <div class="ad-text">
+                  <p id="main-type-2" class="ad-type"></p>
+                  <span>김태리가 선택한 단 한벌의 겨울 아우터.</span>
+                  <span>포근하게 안기는 느낌 그대로</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="ad-box" href="#ad">
+                <div class="ad-text">
+                  <p id="main-type-3" class="ad-type"></p>
+                  <span>지금떠나고 싶은 #캠퍼를 위한</span>
+                  <span>특별한 캠핑 위크(~11/11)</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- Section : Best Item -->
+      <section class="best-item">
+        <div class="inner-wrap">
+          <h1>BEST ITEM</h1>
+          <input type="radio" name="tabmenu" id="best" checked />
+          <input type="radio" name="tabmenu" id="clothes" />
+          <input type="radio" name="tabmenu" id="shoes" />
+          <input type="radio" name="tabmenu" id="acc" />
+          <div class="best-tabs">
+            <label for="best">best</label>
+            <label for="clothes">clothes</label>
+            <label for="shoes">shoes</label>
+            <label for="acc">acc</label>
+          </div>
+          <div class="best-list best">
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/clothes/1-1.jpg" />
+                <img class="hover-img" src="./images/best-item/clothes/1-2.jpg" />
+              </div>
+              <p class="title">[온라인 전용] 남녀공용 패커블 솟솟 초경량 다운</p>
+              <span class="price">158,000원</span>
+              <div class="color-box">
+                <span style="background-color: #ede6d4"></span>
+                <span style="background-color: #32343f"></span>
+                <span style="background-color: #f26b2f"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/clothes/2-1.jpg" />
+                <img class="hover-img" src="./images/best-item/clothes/2-2.jpg" />
+              </div>
+              <p class="title">여성 시그니처 방수재킷 #윈드체이서</p>
+              <span class="price">350,000원</span>
+              <div class="color-box">
+                <span style="background-color: #1c1c1e"></span>
+                <span style="background-color: #0c5145"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/shoes/1-1.jpg" />
+                <img class="hover-img" src="./images/best-item/shoes/1-2.jpg" />
+              </div>
+              <p class="title">여성 패딩 스니커즈 #도브</p>
+              <span class="price">168,000원</span>
+              <div class="color-box">
+                <span style="background-color: #d5a7a4"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/clothes/6-1.jpg" />
+                <img class="hover-img" src="./images/best-item/clothes/6-2.jpg" />
+              </div>
+              <p class="title">[온라인 전용] 남녀공용 패커블 솟솟 초경량 아노락 다운</p>
+              <span class="price">178,000원</span>
+              <div class="color-box">
+                <span style="background-color: #eee7d5"></span>
+                <span style="background-color: #88b3b2"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/clothes/5-1.jpg" />
+                <img class="hover-img" src="./images/best-item/clothes/5-2.jpg" />
+              </div>
+              <p class="title">남녀공용 방풍 재킷 #WIND K (윈드케이)</p>
+              <span class="price">198,000원</span>
+              <div class="color-box">
+                <span style="background-color: #1b1b1d"></span>
+                <span style="background-color: #0c5145"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/shoes/2-1.jpg" />
+                <img class="hover-img" src="./images/best-item/shoes/2-2.jpg" />
+              </div>
+              <p class="title">남녀공용 하이킹화 #트라이포드 미드</p>
+              <span class="price">290,000원</span>
+              <div class="color-box">
+                <span style="background-color: #cbc2ac"></span>
+                <span style="background-color: #1e1f21"></span>
+                <span style="background-color: #b68138"></span>
+                <span style="background-color: #776c70"></span>
+                <span style="background-color: #c4c2c4"></span>
+                <span style="background-color: #716b60"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/clothes/7-1.jpg" />
+                <img class="hover-img" src="./images/best-item/clothes/7-2.jpg" />
+              </div>
+              <p class="title">여성 롱기장 패딩 #키퍼 롱</p>
+              <span class="price">350,000원</span>
+              <div class="color-box">
+                <span style="background-color: #313832"></span>
+                <span style="background-color: #e8e4d8"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/acc/2-1.jpg" />
+                <img class="hover-img" src="./images/best-item/acc/2-2.jpg" />
+              </div>
+              <p class="title">남녀공용 익스퍼트 상록수 하이</p>
+              <span class="price">23,000원</span>
+              <div class="color-box">
+                <span style="background-color: #4f331d"></span>
+                <span style="background-color: #12161e"></span>
+              </div>
+            </a>
+          </div>
+          <div class="best-list clothes">
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/clothes/1-1.jpg" />
+                <img class="hover-img" src="./images/best-item/clothes/1-2.jpg" />
+              </div>
+              <p class="title">[온라인 전용] 남녀공용 패커블 솟솟 초경량 다운</p>
+              <span class="price">158,000원</span>
+              <div class="color-box">
+                <span style="background-color: #ede6d4"></span>
+                <span style="background-color: #32343f"></span>
+                <span style="background-color: #f26b2f"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/clothes/2-1.jpg" />
+                <img class="hover-img" src="./images/best-item/clothes/2-2.jpg" />
+              </div>
+              <p class="title">여성 시그니처 방수재킷 #윈드체이서</p>
+              <span class="price">350,000원</span>
+              <div class="color-box">
+                <span style="background-color: #1c1c1e"></span>
+                <span style="background-color: #0c5145"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/clothes/3-1.jpg" />
+                <img class="hover-img" src="./images/best-item/clothes/3-2.jpg" />
+              </div>
+              <p class="title">남녀공용 방풍 재킷 #WIND K (윈드케이)</p>
+              <span class="price">198,000원</span>
+              <div class="color-box">
+                <span style="background-color: #1b1b1d"></span>
+                <span style="background-color: #0c5145"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/clothes/4-1.jpg" />
+                <img class="hover-img" src="./images/best-item/clothes/4-2.jpg" />
+              </div>
+              <p class="title">[온라인 전용] 남녀공용 패커블 솟솟 초경량 다운</p>
+              <span class="price">158,000원</span>
+              <div class="color-box">
+                <span style="background-color: #ede6d4"></span>
+                <span style="background-color: #32343f"></span>
+                <span style="background-color: #f26b2f"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/clothes/5-1.jpg" />
+                <img class="hover-img" src="./images/best-item/clothes/5-2.jpg" />
+              </div>
+              <p class="title">남녀공용 방풍 재킷 #WIND K (윈드케이)</p>
+              <span class="price">198,000원</span>
+              <div class="color-box">
+                <span style="background-color: #1b1b1d"></span>
+                <span style="background-color: #0c5145"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/clothes/6-1.jpg" />
+                <img class="hover-img" src="./images/best-item/clothes/6-2.jpg" />
+              </div>
+              <p class="title">[온라인 전용] 남녀공용 패커블 솟솟 초경량 아노락 다운</p>
+              <span class="price">178,000원</span>
+              <div class="color-box">
+                <span style="background-color: #eee7d5"></span>
+                <span style="background-color: #88b3b2"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/clothes/7-1.jpg" />
+                <img class="hover-img" src="./images/best-item/clothes/7-2.jpg" />
+              </div>
+              <p class="title">여성 롱기장 패딩 #키퍼 롱</p>
+              <span class="price">350,000원</span>
+              <div class="color-box">
+                <span style="background-color: #313832"></span>
+                <span style="background-color: #e8e4d8"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/clothes/8-1.jpg" />
+                <img class="hover-img" src="./images/best-item/clothes/8-2.jpg" />
+              </div>
+              <p class="title">남녀공용 패딩판초 #선셋판초</p>
+              <span class="no-price">88,000원</span>
+              <span class="sale-price">88,000원 (40%↓)</span>
+              <div class="color-box">
+                <span style="background-color: #ede6d4"></span>
+                <span style="background-color: #32343f"></span>
+                <span style="background-color: #f26b2f"></span>
+              </div>
+            </a>
+          </div>
+          <div class="best-list shoes">
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/shoes/1-1.jpg" />
+                <img class="hover-img" src="./images/best-item/shoes/1-2.jpg" />
+              </div>
+              <p class="title">여성 패딩 스니커즈 #도브</p>
+              <span class="price">168,000원</span>
+              <div class="color-box">
+                <span style="background-color: #d5a7a4"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/shoes/2-1.jpg" />
+                <img class="hover-img" src="./images/best-item/shoes/2-2.jpg" />
+              </div>
+              <p class="title">남녀공용 하이킹화 #트라이포드 미드</p>
+              <span class="price">290,000원</span>
+              <div class="color-box">
+                <span style="background-color: #cbc2ac"></span>
+                <span style="background-color: #1e1f21"></span>
+                <span style="background-color: #b68138"></span>
+                <span style="background-color: #776c70"></span>
+                <span style="background-color: #c4c2c4"></span>
+                <span style="background-color: #716b60"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/shoes/3-1.jpg" />
+                <img class="hover-img" src="./images/best-item/shoes/3-2.jpg" />
+              </div>
+              <p class="title">남성 하이킹화 #캠프</p>
+              <span class="price">240,000원</span>
+              <div class="color-box">
+                <span style="background-color: #2c2d2f"></span>
+                <span style="background-color: #f1d5c1"></span>
+                <span style="background-color: #4a4e3f"></span>
+                <span style="background-color: #1f304a"></span>
+                <span style="background-color: #e64847"></span>
+                <span style="background-color: #efeee9"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/shoes/4-1.jpg" />
+                <img class="hover-img" src="./images/best-item/shoes/4-2.jpg" />
+              </div>
+              <p class="title">남성 하이킹화 #플라스크</p>
+              <span class="price">290,000원</span>
+              <div class="color-box">
+                <span style="background-color: #2d2d2d"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/shoes/5-1.jpg" />
+                <img class="hover-img" src="./images/best-item/shoes/5-2.jpg" />
+              </div>
+              <p class="title">남녀공용 하이킹화 #무브</p>
+              <span class="price">230,000원</span>
+              <div class="color-box">
+                <span style="background-color: #cfbea2"></span>
+                <span style="background-color: #242328"></span>
+                <span style="background-color: #b4aa9d"></span>
+                <span style="background-color: #807667"></span>
+                <span style="background-color: #dad1c5"></span>
+                <span style="background-color: #dba549"></span>
+                <span style="background-color: #ce9f97"></span>
+                <span style="background-color: #a67c46"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/shoes/6-1.jpg" />
+                <img class="hover-img" src="./images/best-item/shoes/6-2.jpg" />
+              </div>
+              <p class="title">남녀공용 GORE-TEX 익스퍼트 트레킹화 #2744</p>
+              <span class="price">350,000원</span>
+              <div class="color-box">
+                <span style="background-color: #524b3b"></span>
+                <span style="background-color: #585657"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/shoes/7-1.jpg" />
+                <img class="hover-img" src="./images/best-item/shoes/7-2.jpg" />
+              </div>
+              <p class="title">남녀공용 하이킹화 #라이트닝</p>
+              <span class="price">260,000원</span>
+              <div class="color-box">
+                <span style="background-color: #6e706e"></span>
+                <span style="background-color: #cec5ba"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/shoes/8-1.jpg" />
+                <img class="hover-img" src="./images/best-item/shoes/8-2.jpg" />
+              </div>
+              <p class="title">남녀공용 하이킹화 #무브</p>
+              <span class="price">230,000원</span>
+              <div class="color-box">
+                <span style="background-color: #cfbea2"></span>
+                <span style="background-color: #242328"></span>
+                <span style="background-color: #b4aa9d"></span>
+                <span style="background-color: #807667"></span>
+                <span style="background-color: #dad1c5"></span>
+                <span style="background-color: #dba549"></span>
+                <span style="background-color: #ce9f97"></span>
+                <span style="background-color: #a67c46"></span>
+              </div>
+            </a>
+          </div>
+          <div class="best-list acc">
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/acc/1-1.jpg" />
+                <img class="hover-img" src="./images/best-item/acc/1-2.jpg" />
+              </div>
+              <p class="title">여성 패디드 버킷햇</p>
+              <span class="price">68,000원</span>
+              <div class="color-box">
+                <span style="background-color: #252527"></span>
+                <span style="background-color: #ad94a0"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/acc/2-1.jpg" />
+                <img class="hover-img" src="./images/best-item/acc/2-2.jpg" />
+              </div>
+              <p class="title">남녀공용 익스퍼트 상록수 하이</p>
+              <span class="price">23,000원</span>
+              <div class="color-box">
+                <span style="background-color: #4f331d"></span>
+                <span style="background-color: #12161e"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/acc/3-1.jpg" />
+                <img class="hover-img" src="./images/best-item/acc/3-2.jpg" />
+              </div>
+              <p class="title">남녀공용 스트레치 장갑</p>
+              <span class="price">48,000원</span>
+              <div class="color-box">
+                <span style="background-color: #201e25"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/acc/4-1.jpg" />
+                <img class="hover-img" src="./images/best-item/acc/4-2.jpg" />
+              </div>
+              <p class="title">남녀공용 고어텍스 인피니엄 버킷햇</p>
+              <span class="price">68,000원</span>
+              <div class="color-box">
+                <span style="background-color: #897c72"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/acc/5-1.jpg" />
+                <img class="hover-img" src="./images/best-item/acc/5-2.jpg" />
+              </div>
+              <p class="title">반다나_클라이밍</p>
+              <span class="price">10,000원</span>
+              <div class="color-box">
+                <span style="background-color: #30354d"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/acc/6-1.jpg" />
+                <img class="hover-img" src="./images/best-item/acc/6-2.jpg" />
+              </div>
+              <p class="title">여성 워킹 부클 오스키 미드</p>
+              <span class="price">15,000원</span>
+              <div class="color-box">
+                <span style="background-color: #212e2f"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/acc/7-1.jpg" />
+                <img class="hover-img" src="./images/best-item/acc/7-2.jpg" />
+              </div>
+              <p class="title">[온라인 전용] [NOACH] 남녀공용 에코 플리스 롱 플랩캡</p>
+              <span class="price">83,000원</span>
+              <div class="color-box">
+                <span style="background-color: #e9e2d8"></span>
+              </div>
+            </a>
+            <a class="best-goods" href="#none">
+              <div class="image-box">
+                <img src="./images/best-item/acc/8-1.jpg" />
+                <img class="hover-img" src="./images/best-item/acc/8-2.jpg" />
+              </div>
+              <p class="title">[온라인 전용] [NOACH] 남녀공용 에코 미드삭스</p>
+              <span class="price">15,000원</span>
+              <div class="color-box">
+                <span style="background-color: #e8e4d5"></span>
+                <span style="background-color: #d5bdbb"></span>
+              </div>
+            </a>
+          </div>
+          <button id="more-btn">더 많은 상품 보러가기<i class="xi-angle-right-min"></i></button>
+        </div>
+      </section>
+      <!-- Section : Main Banner -->
+      <section class="main-banner">
+        <div class="swiper banner-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+          </div>
+          <div class="swiper-button-next banner-next-btn"></div>
+          <div class="swiper-button-prev banner-prev-btn"></div>
+          <div class="swiper-pagination banner-pagination"></div>
+          <i class="xi-angle-right-thin"></i>
+        </div>
+      </section>
+      <!-- Section : Collection -->
+      <section class="collection">
+        <div class="inner-wrap">
+          <div class="title-wrap">
+            <h1>#솟솟 초경량 다운 컬렉션</h1>
+            <div class="tab-btns">
+              <a data-alt="outer" class="active" href="#none">다운</a>
+              <a data-alt="vest" href="#none">조끼</a>
+              <a data-alt="accessory" href="#none">액세서리</a>
+            </div>
+          </div>
+          <div class="collection-wrap">
+            <div id="outer" class="collection-item active">
+              <div class="photo">
+                <a href="#photo">
+                  <img src="./images/collection/main/1.jpg" />
+                </a>
+              </div>
+              <div class="desc">
+                <div class="desc-title">
+                  <h1>#솟솟 초경량_OUTER</h1>
+                  <p>하나만 입어도 따뜻하게</p>
+                </div>
+                <div class="swiper goods-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#none">
+                        <div class="photo-box">
+                          <img class="front" src="./images/collection/sub/01/1-1.jpg" />
+                          <img class="back" src="./images/collection/sub/01/1-2.jpg" />
+                        </div>
+                        <div class="info-box">
+                          <h2 class="name">[온라인 전용] 남녀공용 패커블 솟솟 초경량 아노락 다운</h2>
+                          <span class="price">178,000원</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#none">
+                        <div class="photo-box">
+                          <img class="front" src="./images/collection/sub/01/2-1.jpg" />
+                          <img class="back" src="./images/collection/sub/01/2-2.jpg" />
+                        </div>
+                        <div class="info-box">
+                          <h2 class="name">[온라인 전용] 여성 패커블 솟솟 케이프 다운</h2>
+                          <span class="price">178,000원</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#none">
+                        <div class="photo-box">
+                          <img class="front" src="./images/collection/sub/01/3-1.jpg" />
+                          <img class="back" src="./images/collection/sub/01/3-2.jpg" />
+                        </div>
+                        <div class="info-box">
+                          <h2 class="name">[온라인 전용] 남녀공용 패커블 솟솟 초경량 다운</h2>
+                          <span class="price">158,000원</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#none">
+                        <div class="photo-box">
+                          <img class="front" src="./images/collection/sub/01/4-1.jpg" />
+                          <img class="back" src="./images/collection/sub/01/4-2.jpg" />
+                        </div>
+                        <div class="info-box">
+                          <h2 class="name">[온라인 전용] 남녀공용 패커블 솟솟 초경량 아노락 다운</h2>
+                          <span class="price">178,000원</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#none">
+                        <div class="photo-box">
+                          <img class="front" src="./images/collection/sub/01/5-1.jpg" />
+                          <img class="back" src="./images/collection/sub/01/5-2.jpg" />
+                        </div>
+                        <div class="info-box">
+                          <h2 class="name">[온라인 전용] 남성 패커블 솟솟 초경량 셔츠다운</h2>
+                          <span class="price">178,000원</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+            </div>
+            <div id="vest" class="collection-item">
+              <div class="photo">
+                <a href="#photo">
+                  <img src="./images/collection/main/2.jpg" />
+                </a>
+              </div>
+              <div class="desc">
+                <div class="desc-title">
+                  <h1>#솟솟 초경량_LAYERED_ITEM</h1>
+                  <p>하나만 입어도 따뜻하게</p>
+                </div>
+                <div class="swiper goods-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#none">
+                        <div class="photo-box">
+                          <img class="front" src="./images/collection/sub/02/1-1.jpg" />
+                          <img class="back" src="./images/collection/sub/02/1-2.jpg" />
+                        </div>
+                        <div class="info-box">
+                          <h2 class="name">[온라인 전용] 남녀공용 패커블 솟솟 다운베스트</h2>
+                          <span class="price">138,000원</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#none">
+                        <div class="photo-box">
+                          <img class="front" src="./images/collection/sub/02/2-1.jpg" />
+                          <img class="back" src="./images/collection/sub/02/2-2.jpg" />
+                        </div>
+                        <div class="info-box">
+                          <h2 class="name">[온라인 전용] 남녀공용 패커블 솟솟 다운베스트</h2>
+                          <span class="price">138,000원</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#none">
+                        <div class="photo-box">
+                          <img class="front" src="./images/collection/sub/02/3-1.jpg" />
+                          <img class="back" src="./images/collection/sub/02/3-2.jpg" />
+                        </div>
+                        <div class="info-box">
+                          <h2 class="name">[온라인 전용] 남녀공용 패커블 솟솟 다운베스트</h2>
+                          <span class="price">138,000원</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+            </div>
+            <div id="accessory" class="collection-item">
+              <div class="photo">
+                <a href="#photo">
+                  <img src="./images/collection/main/3.jpg" />
+                </a>
+              </div>
+              <div class="desc">
+                <div class="desc-title">
+                  <h1>#솟솟 초경량_PADDED_ACC</h1>
+                  <p>하나만 입어도 따뜻하게</p>
+                </div>
+                <div class="swiper goods-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#none">
+                        <div class="photo-box">
+                          <img class="front" src="./images/collection/sub/03/1-1.jpg" />
+                          <img class="back" src="./images/collection/sub/03/1-2.jpg" />
+                        </div>
+                        <div class="info-box">
+                          <h2 class="name">[온라인 전용] 여성 솟솟 경량 머플러</h2>
+                          <span class="price">58,000원</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#none">
+                        <div class="photo-box">
+                          <img class="front" src="./images/collection/sub/03/2-1.jpg" />
+                          <img class="back" src="./images/collection/sub/03/2-2.jpg" />
+                        </div>
+                        <div class="info-box">
+                          <h2 class="name">[온라인 전용] 여성 솟솟 경량 머플러</h2>
+                          <span class="price">58,000원</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#none">
+                        <div class="photo-box">
+                          <img class="front" src="./images/collection/sub/03/3-1.jpg" />
+                          <img class="back" src="./images/collection/sub/03/3-2.jpg" />
+                        </div>
+                        <div class="info-box">
+                          <h2 class="name">[온라인 전용] 남녀공용 솟솟 경량 토트백</h2>
+                          <span class="price">68,000원</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#none">
+                        <div class="photo-box">
+                          <img class="front" src="./images/collection/sub/03/4-1.jpg" />
+                          <img class="back" src="./images/collection/sub/03/4-2.jpg" />
+                        </div>
+                        <div class="info-box">
+                          <h2 class="name">[온라인 전용] 남녀공용 솟솟 경량 토트백</h2>
+                          <span class="price">68,000원</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#none">
+                        <div class="photo-box">
+                          <img class="front" src="./images/collection/sub/03/5-1.jpg" />
+                          <img class="back" src="./images/collection/sub/03/5-2.jpg" />
+                        </div>
+                        <div class="info-box">
+                          <h2 class="name">[온라인 전용] 남녀공용 솟솟 경량 패딩 버킷햇</h2>
+                          <span class="price">65,000원</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#none">
+                        <div class="photo-box">
+                          <img class="front" src="./images/collection/sub/03/6-1.jpg" />
+                          <img class="back" src="./images/collection/sub/03/6-2.jpg" />
+                        </div>
+                        <div class="info-box">
+                          <h2 class="name">[온라인 전용] 남녀공용 솟솟 경량 패딩 버킷햇</h2>
+                          <span class="price">65,000원</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section : Styling -->
+      <section class="styling">
+        <div class="inner-wrap style-inner">
+          <div class="title-wrap">
+            <h1>#NOACH PROJECT STYLING</h1>
+          </div>
+          <div class="swiper style-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="style-item">
+                  <div class="goods web" style="background-color: #e3bcad">
+                    <a class="goods-item" href="#none">
+                      <div class="img-box">
+                        <img class="front" src="./images/style/sub/01/1-1.jpg" />
+                        <img class="back" src="./images/style/sub/01/1-2.jpg" />
+                      </div>
+                      <div class="info-box">
+                        <h2 class="name">[온라인 전용] [NOACH] 여성 에코 플리스 재킷</h2>
+                        <span class="price">188,000원</span>
+                      </div>
+                    </a>
+                    <a class="goods-item" href="#none">
+                      <div class="img-box">
+                        <img class="front" src="./images/style/sub/01/2-1.jpg" />
+                        <img class="back" src="./images/style/sub/01/2-2.jpg" />
+                      </div>
+                      <div class="info-box">
+                        <h2 class="name">[온라인 전용] [NOACH] 여성 에코 플리스 재킷</h2>
+                        <span class="price">188,000원</span>
+                      </div>
+                    </a>
+                    <a class="goods-item" href="#none">
+                      <div class="img-box">
+                        <img class="front" src="./images/style/sub/01/3-1.jpg" />
+                        <img class="back" src="./images/style/sub/01/3-2.jpg" />
+                      </div>
+                      <div class="info-box">
+                        <h2 class="name">[온라인 전용] [NOACH] 여성 에코 플리스 재킷</h2>
+                        <span class="price">188,000원</span>
+                      </div>
+                    </a>
+                    <a class="goods-item" href="#none">
+                      <div class="img-box">
+                        <img class="front" src="./images/style/sub/01/4-1.jpg" />
+                        <img class="back" src="./images/style/sub/01/4-2.jpg" />
+                      </div>
+                      <div class="info-box">
+                        <h2 class="name">[온라인 전용] [NOACH] 여성 에코 플리스 재킷</h2>
+                        <span class="price">188,000원</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="photo web">
+                    <img src="./images/style/main/1.jpg" />
+                  </div>
+                  <div class="goods mobile flex-order swiper style-goods-swiper" style="background-color: #e3bcad">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a class="goods-item" href="#none">
+                          <div class="img-box">
+                            <img class="front" src="./images/style/sub/01/1-1.jpg" />
+                            <img class="back" src="./images/style/sub/01/1-2.jpg" />
+                          </div>
+                          <div class="info-box">
+                            <h2 class="name">[온라인 전용] [NOACH] 여성 에코 플리스 재킷</h2>
+                            <span class="price">188,000원</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="goods-item" href="#none">
+                          <div class="img-box">
+                            <img class="front" src="./images/style/sub/01/2-1.jpg" />
+                            <img class="back" src="./images/style/sub/01/2-2.jpg" />
+                          </div>
+                          <div class="info-box">
+                            <h2 class="name">[온라인 전용] [NOACH] 여성 에코 플리스 재킷</h2>
+                            <span class="price">188,000원</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="goods-item" href="#none">
+                          <div class="img-box">
+                            <img class="front" src="./images/style/sub/01/3-1.jpg" />
+                            <img class="back" src="./images/style/sub/01/3-2.jpg" />
+                          </div>
+                          <div class="info-box">
+                            <h2 class="name">[온라인 전용] [NOACH] 여성 에코 플리스 재킷</h2>
+                            <span class="price">188,000원</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="goods-item" href="#none">
+                          <div class="img-box">
+                            <img class="front" src="./images/style/sub/01/4-1.jpg" />
+                            <img class="back" src="./images/style/sub/01/4-2.jpg" />
+                          </div>
+                          <div class="info-box">
+                            <h2 class="name">[온라인 전용] [NOACH] 여성 에코 플리스 재킷</h2>
+                            <span class="price">188,000원</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-scrollbar style-goods-scrollbar"></div>
+                  </div>
+                  <div class="photo mobile flex-order">
+                    <img src="./images/style/main/1.jpg" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="style-item">
+                  <div class="goods web" style="background-color: #c7d1da">
+                    <a class="goods-item" href="#none">
+                      <div class="img-box">
+                        <img class="front" src="./images/style/sub/02/1-1.jpg" />
+                        <img class="back" src="./images/style/sub/02/1-2.jpg" />
+                      </div>
+                      <div class="info-box">
+                        <h2 class="name">[온라인 전용] [NOACH] 여성 에코 플리스 재킷</h2>
+                        <span class="price">188,000원</span>
+                      </div>
+                    </a>
+                    <a class="goods-item" href="#none">
+                      <div class="img-box">
+                        <img class="front" src="./images/style/sub/02/2-1.jpg" />
+                        <img class="back" src="./images/style/sub/02/2-2.jpg" />
+                      </div>
+                      <div class="info-box">
+                        <h2 class="name">[온라인 전용] [NOACH] 여성 에코 플리스 재킷</h2>
+                        <span class="price">188,000원</span>
+                      </div>
+                    </a>
+                    <a class="goods-item" href="#none">
+                      <div class="img-box">
+                        <img class="front" src="./images/style/sub/02/3-1.jpg" />
+                        <img class="back" src="./images/style/sub/02/3-2.jpg" />
+                      </div>
+                      <div class="info-box">
+                        <h2 class="name">[온라인 전용] [NOACH] 여성 에코 플리스 재킷</h2>
+                        <span class="price">188,000원</span>
+                      </div>
+                    </a>
+                    <a class="goods-item" href="#none">
+                      <div class="img-box">
+                        <img class="front" src="./images/style/sub/02/4-1.jpg" />
+                        <img class="back" src="./images/style/sub/02/4-2.jpg" />
+                      </div>
+                      <div class="info-box">
+                        <h2 class="name">[온라인 전용] [NOACH] 여성 에코 플리스 재킷</h2>
+                        <span class="price">188,000원</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="photo web">
+                    <img src="./images/style/main/2.jpg" />
+                  </div>
+                  <div class="goods flex-order swiper style-goods-swiper mobile" style="background-color: #c7d1da">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a class="goods-item" href="#none">
+                          <div class="img-box">
+                            <img class="front" src="./images/style/sub/02/1-1.jpg" />
+                            <img class="back" src="./images/style/sub/02/1-2.jpg" />
+                          </div>
+                          <div class="info-box">
+                            <h2 class="name">[온라인 전용] [NOACH] 여성 에코 플리스 재킷</h2>
+                            <span class="price">188,000원</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="goods-item" href="#none">
+                          <div class="img-box">
+                            <img class="front" src="./images/style/sub/02/2-1.jpg" />
+                            <img class="back" src="./images/style/sub/02/2-2.jpg" />
+                          </div>
+                          <div class="info-box">
+                            <h2 class="name">[온라인 전용] [NOACH] 여성 에코 플리스 재킷</h2>
+                            <span class="price">188,000원</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="goods-item" href="#none">
+                          <div class="img-box">
+                            <img class="front" src="./images/style/sub/02/3-1.jpg" />
+                            <img class="back" src="./images/style/sub/02/3-2.jpg" />
+                          </div>
+                          <div class="info-box">
+                            <h2 class="name">[온라인 전용] [NOACH] 여성 에코 플리스 재킷</h2>
+                            <span class="price">188,000원</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class="goods-item" href="#none">
+                          <div class="img-box">
+                            <img class="front" src="./images/style/sub/02/4-1.jpg" />
+                            <img class="back" src="./images/style/sub/02/4-2.jpg" />
+                          </div>
+                          <div class="info-box">
+                            <h2 class="name">[온라인 전용] [NOACH] 여성 에코 플리스 재킷</h2>
+                            <span class="price">188,000원</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-scrollbar style-goods-scrollbar"></div>
+                    </div>
+                  </div>
+                  <div class="photo flex-order mobile">
+                    <img src="./images/style/main/2.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next style-next-btn"></div>
+            <div class="swiper-button-prev style-prev-btn"></div>
+            <div class="swiper-pagination style-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Section : Quick Menu -->
+      <section class="quick-menu">
+        <div class="inner-wrap quick-inner">
+          <a class="menu-item" href="#none">
+            <div class="back"></div>
+            <div class="front"><span>#PERFORMANCE</span><span>SHOESE</span></div>
+          </a>
+          <a class="menu-item" href="#none">
+            <div class="back"></div>
+            <div class="front"><span>#CAMPING</span><span>GEAR</span></div>
+          </a>
+          <a class="menu-item" href="#none">
+            <div class="back"></div>
+            <div class="front"><span>#EXPERT</span><span>WEAR</span></div>
+          </a>
+        </div>
+      </section>
+      <!-- Section : Video -->
+      <section class="video">
+        <div class="inner-wrap video-inner">
+          <div class="swiper video-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/bZ9Rmx10U2w"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="swiper-slide">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/RrmKdnb1Vpw"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="swiper-slide">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/d0Wly71KuqM"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="swiper-button-next video-next-btn"></div>
+            <div class="swiper-button-prev video-prev-btn"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer>
+        <div class="inner-wrap footer-inner">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <img src="./images/footer/footer-logo.png" alt="footer logo" />
+            </div>
+            <ul class="footer-tab">
+              <li><a href="#footer">공지사항</a></li>
+              <li><a href="#footer">매장안내</a></li>
+              <li><a href="#footer">제휴문의</a></li>
+              <li><a href="#footer">대리점 개설문의</a></li>
+              <li><a href="#footer">고객센터</a></li>
+              <li><a href="#footer">1:1 고객상담</a></li>
+              <li><a href="#footer">사이트맵</a></li>
+            </ul>
+            <div class="company-info">
+              <div class="mobile-comp-name">㈜코오롱인더스트리</div>
+              <address>
+                서울특별시 강남구 삼성로 518 ㈜코오롱인더스트리 / 대표이사 : 유석진<br />
+                <strong>
+                  사업자등록번호 : 138-85-19612 <em>/</em><b>통신판매업신고 : 제2017-서울강남-02297호</b>
+                  <a href="#none">[사업자정보확인]</a>
+                </strong>
+                TEL : 1588-7667 (유료) | Mail : kolonsport@kolon.com
+                <br />
+                <span>토스페이먼츠 <a href="#none">[가입확인]</a> | 나이스페이먼츠 <a href="#none">[가입확인]</a></span>
+              </address>
+            </div>
+            <div class="copyright">ⓒ KOLON SPORT all rights reserved</div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-util">
+              <ul class="footer-tab">
+                <li><a href="#footer">공지사항</a></li>
+                <li><a href="#footer">매장안내</a></li>
+                <li><a href="#footer">제휴문의</a></li>
+                <li><a href="#footer">대리점 개설문의</a></li>
+                <li><a href="#footer">고객센터</a></li>
+                <li><a href="#footer">1:1 고객상담</a></li>
+                <li><a href="#footer">사이트맵</a></li>
+              </ul>
+              <div class="footer-lang">
+                <span>language</span>
+                <div class="footer-select">
+                  <button>Korean</button>
+                  <ul class="footer-select-list">
+                    <li><a href="#none">English</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-site">
+                <span>family site</span>
+                <div class="footer-select">
+                  <button>FAMILY SITE</button>
+                  <ul class="footer-select-list">
+                    <li><a href="#none">KOLON MALL</a></li>
+                    <li><a href="#none">THE CART GOLF</a></li>
+                    <li><a href="#none">byseries</a></li>
+                    <li><a href="#none">247series</a></li>
+                    <li><a href="#none">Archivépke</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-side">
+            <div class="sns">
+              <a href="#sns"></a>
+              <a href="#sns"></a>
+              <a href="#sns"></a>
+            </div>
+            <div class="cs-info">
+              <em>CS Center</em>
+              <strong>1588-7667 <b>(유료)</b></strong>
+              <span>09:30 ~ 18:00 (주말/공휴일 휴무)</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Top Button -->
+      <aside class="top-btn"><a href="#">TOP</a></aside>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-in</title>
+    <link rel="stylesheet" href="./sign-in.css" />
+  </head>
+  <body>
+    <form>
+      <div class="id">
+        <span class="title">아이디</span>
+        <input type="text" />
+      </div>
+      <div class="pw">
+        <span class="title">비밀번호</span>
+        <input type="password" />
+      </div>
+      <div class="name">
+        <span class="title">이름</span>
+        <input type="text" />
+      </div>
+      <div class="phone">
+        <span class="title">휴대폰번호</span>
+        <div class="box">
+          <select id="tel1">
+            <option value="">선택</option>
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="016">016</option>
+            <option value="017">017</option>
+            <option value="018">018</option>
+            <option value="019">019</option>
+          </select>
+          <input type="tel" id="tel2" /><input type="tel" id="tel3" />
+        </div>
+      </div>
+      <div class="gender">
+        <span class="title">성별</span>
+        <input type="radio" id="man" name="gender" />
+        <label for="man">남자</label>
+        <input type="radio" id="woman" name="gender" />
+        <label for="woman">여자</label>
+      </div>
+      <div class="birth">
+        <span class="title">생년월일</span>
+        <div class="box">
+          <input type="text" class="year" maxlength="4" placeholder="년(4자)" />
+          <select class="month">
+            <option value="">월</option>
+            <option value="1">1월</option>
+            <option value="2">2월</option>
+            <option value="3">3월</option>
+            <option value="4">4월</option>
+            <option value="5">5월</option>
+            <option value="6">6월</option>
+            <option value="7">7월</option>
+            <option value="8">8월</option>
+            <option value="9">9월</option>
+            <option value="10">10월</option>
+            <option value="11">11월</option>
+            <option value="12">12월</option>
+          </select>
+          <input type="text" class="day" maxlength="2" placeholder="일" />
+        </div>
+      </div>
+      <div class="hobby">
+        <span class="title">관심사</span>
+        <div class="check-items">
+          <div class="check-item">
+            <input type="checkbox" id="life" />
+            <label for="life">일상</label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="culture" />
+            <label for="culture">문화</label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="animal" />
+            <label for="animal">동물</label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="style" />
+            <label for="style">스타일</label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="travel" />
+            <label for="travel">여행</label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="webtoon" />
+            <label for="webtoon">웹툰</label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="food" />
+            <label for="food">음식</label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="info" />
+            <label for="info">지식·정보</label>
+          </div>
+        </div>
+      </div>
+      <button class="submit">submit</button>
+    </form>
+  </body>
+</html>

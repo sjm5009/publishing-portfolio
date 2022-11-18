@@ -1,0 +1,309 @@
+@media (max-width: 768px) {
+  /* Common */
+  .title-style h1 {
+    font-size: 65px;
+    margin-bottom: 25px;
+  }
+  /* ---------------------- Header ---------------------- */
+  header {
+    padding: 20px 20px 10px;
+  }
+  .logo-menu {
+    float: none;
+  }
+  .area-gnb {
+    display: none;
+  }
+  #menu-search {
+    width: 70%;
+    padding-right: 40px;
+  }
+
+  /* ---------------------- Section : Menu Modal ---------------------- */
+  .menu-inner {
+    width: 80%;
+  }
+  .menu-modal .xi-close-thin {
+    left: 75%;
+  }
+  .menu-modal.active .xi-close-thin {
+    left: calc(80% + 5px);
+  }
+  .menu-item {
+    margin-bottom: 20px;
+  }
+  .menu-sns {
+    width: 80%;
+  }
+  .sup-menu h1 span {
+    font-size: 19px;
+  }
+  .sub-menu .title {
+    padding: 3px 6px;
+  }
+
+  /* ---------------------- Section : Main ad ---------------------- */
+  .main-search {
+    margin-bottom: 23px;
+  }
+  .main-search img {
+    width: 90%;
+  }
+  .main-search p {
+    width: 90%;
+  }
+  .main-category {
+    padding: 0;
+    width: 90%;
+  }
+  .main-category li {
+    width: 48%;
+    margin-bottom: 10px;
+  }
+  .main-category button {
+    width: 100%;
+    height: 40px;
+    margin: 0;
+  }
+
+  /* ---------------------- Section : Content ---------------------- */
+  .content {
+    margin-bottom: 100px;
+  }
+  .content::after {
+    bottom: 39%;
+  }
+  .content-wrap {
+    width: 100%;
+  }
+  .content-data {
+    overflow: visible;
+  }
+  .content-data > div {
+    float: none;
+    width: 100%;
+  }
+  .main-photo-view {
+    margin-left: 0;
+    margin: auto;
+    width: 88%;
+    height: 400px;
+  }
+  .main-desc-text {
+    position: static;
+  }
+  .main-cont.flex-order {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-cont.flex-order > div:first-child {
+    order: 2;
+  }
+  .main-cont.flex-order > div:last-child {
+    order: 1;
+  }
+  .main-desc {
+    width: 88%;
+    margin: auto;
+    height: 300px;
+  }
+  .main-desc-text h1 {
+    font-size: 38px;
+    margin-bottom: 0px;
+  }
+  .main-desc-text p span {
+    display: inline;
+  }
+  .sub-photo {
+    position: static;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+  }
+  .sub-photo-view,
+  .sub-photo-view img {
+    width: 150px;
+    height: 150px;
+  }
+  .sub-photo-view:first-child {
+    margin-right: 20px;
+  }
+
+  /* ---------------------- Section : Place ---------------------- */
+  .place {
+    margin-bottom: 100px;
+  }
+  .place-wrap {
+    width: 100%;
+  }
+  .place-btn {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 25px 40px;
+    width: 175px;
+  }
+  .place-btn:nth-child(2n-1) {
+    margin-right: 8px;
+  }
+
+  /* ---------------------- Section : Display ---------------------- */
+  .display-wrap {
+    width: 100%;
+  }
+  .display-tabs {
+    width: 92%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .display-tabs a {
+    margin-right: 0;
+    width: 40%;
+  }
+  .display-item {
+    display: block;
+    padding: 0;
+  }
+  .display-item > div {
+    margin: auto;
+  }
+  .display-box,
+  .display-desc {
+    width: 80%;
+  }
+  .display-box {
+    height: 400px;
+  }
+  .display-desc h3 {
+    width: 100%;
+  }
+  .photo-box {
+    width: 100%;
+  }
+
+  /* ---------------------- Section : Collection ----------------------*/
+  .collection {
+    margin-bottom: 120px;
+  }
+  .collection-cont {
+    padding: 0 calc(calc(100% - 300px) / 2);
+  }
+  .collection .slide-img {
+    width: 300px;
+  }
+  .collection .slick-slide[data-slick-index="2"] .slide-img,
+  .collection .slick-slide[data-slick-index="4"] .slide-img,
+  .collection .slick-slide[data-slick-index="6"] .slide-img,
+  .collection .slick-slide[data-slick-index="7"] .slide-img {
+    width: 300px;
+  }
+  .slick-list {
+    padding: 0 !important;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    padding: 5px 5px !important;
+  }
+  .slick-prev {
+    left: 2% !important;
+  }
+  .slick-next {
+    right: 4.5% !important;
+  }
+
+  /* ---------------------- Section - Social Media ---------------------- */
+  .social-wrap {
+    width: 100%;
+  }
+  .social-title h1 {
+    font-size: 54px;
+  }
+  .social-cont {
+    display: block;
+    margin: auto;
+  }
+
+  /* ---------------------- Section : News ---------------------- */
+  .news {
+    margin-bottom: 100px;
+  }
+  .news-wrap {
+    width: 100%;
+  }
+  .news-header,
+  .news-cont {
+    width: 85%;
+    margin: auto;
+  }
+  .news-header {
+    margin-bottom: 10px;
+  }
+  .news-item {
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+  }
+  .date-box {
+    width: 30%;
+    margin-right: 5px;
+  }
+  .news-item .desc-box {
+    width: 65%;
+  }
+
+  /* ---------------------- Footer ---------------------- */
+  .footer-wrap {
+    width: 100%;
+  }
+  .area-box {
+    margin-bottom: 40px;
+  }
+  .area-item {
+    display: block;
+    margin: 0;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+  .area-item a {
+    margin: auto;
+    display: block;
+    width: 70%;
+  }
+  .area-info {
+    width: 100%;
+  }
+  .policy-sns {
+    overflow: visible;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .policy-sns > div {
+    float: none;
+    height: fit-content;
+  }
+  .policy,
+  .sns {
+    width: 70%;
+  }
+  .policy {
+    margin: auto;
+    order: 2;
+  }
+  .policy em {
+    display: block;
+  }
+  .sns {
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .sns-box {
+    position: static;
+    order: 1;
+  }
+  .split-icon {
+    display: none;
+  }
+}

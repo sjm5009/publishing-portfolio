@@ -1,0 +1,143 @@
+header
+    .logo-menu
+        .menu > span > i
+        .logo > a > img
+    nav.area-gnb
+        (a > img + span)*8
+    .search-icon > i
+    .header-search
+        button#search-close > i
+        input[type=text]
+        button#del-text > i
+        
+section.main-ad
+    .main-search
+        img
+        p > input[type=text]
+    ul.main-category
+        (li > button)*8
+
+section.menu-modal
+    .menu-inner
+        i#btn-close
+        .menu-item
+            .sup-menu
+                h1
+                    span
+                    .menu-more > span
+            .sub-menu
+                .title > a
+    .menu-sns
+        (a > i)*5
+
+section.content
+    .content-wrap
+        .content-title.title-style
+            span
+            h1
+        .content-data
+            .main-photo
+                .main-photo-view
+                    .main-photo-content
+                        img
+            .main-cont
+                .main-desc
+                    .main-desc-text
+                        h1
+                        p > span
+                .sub-photo
+                    .sub-photo-view > img*3
+
+section.place
+    .place-wrap
+        .place-title.title-style
+            span
+            h1
+        .place-cont
+            .place-btn
+                img
+                span
+
+section.display
+    .display-wrap
+        .display-title.title-style
+            span
+            h1
+        .display-cont
+            .display-tabs
+                (a > h3)*6
+            .display-list
+                .display-item
+                    .display-box
+                        .photo-box > img
+                        .hover-box > button
+        .display-morex`
+            button > i
+
+section.collection
+    .collection-title.title-style
+        span
+        h1
+    .collection-cont
+        .swiper-slide
+            a > img
+        .swiper-slide
+            a > img
+        .swiper-slide
+            a > img
+        .swiper-slide
+            a > img
+        .swiper-slide
+            a > img
+        .swiper-slide
+            a > img
+        .swiper-slide
+            a > img
+        .swiper-slide
+            a > img
+
+section.social-media
+    .social-wrap
+        .social-title.title-style
+            span
+            h1
+        .social-cont > img
+        .social-cont > img
+        .social-cont > img
+        .social-cont > img
+        .social-cont > img
+        .social-cont > img
+        .social-cont > img
+        .social-cont > img
+
+section.news
+    .news-wrap
+        .news-header
+            .title > h1
+            .more > a > i
+        .news-cont
+            a.news-item
+                .date-box
+                    h1
+                    span
+                .desc-box
+                    span
+                    em
+                    p
+
+footer
+    .footer-wrap
+        .area-box
+            .area-item
+                a.area > span
+                .area-info
+                    span.tel
+                    span.addr
+        .policy-sns
+            .policy
+                span*5
+            .sns
+                (a > i)*5
+
+aside.top-btn
+    a > i

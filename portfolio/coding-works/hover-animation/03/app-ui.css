@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  background-color: #fff;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-ui {
+  position: relative;
+  width: 280px;
+  height: 520px;
+  transform: rotate(-30deg) skewX(20deg);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.app-ui:hover {
+  box-shadow: -30px 60px 60px rgba(0, 0, 0, 0.15);
+}
+.app-ui img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.app-ui:hover img:nth-child(1) {
+  transform: translate(40px, -30px);
+  opacity: 0.3;
+}
+.app-ui:hover img:nth-child(2) {
+  transform: translate(80px, -60px);
+  opacity: 0.5;
+}
+.app-ui:hover img:nth-child(3) {
+  transform: translate(120px, -90px);
+  opacity: 0.7;
+}
+.app-ui:hover img:nth-child(4) {
+  transform: translate(160px, -120px);
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .app-ui {
+    width: 30%;
+    height: 30%;
+  }
+  .app-ui:hover img:nth-child(1) {
+    transform: translate(20px, -20px);
+    opacity: 0.3;
+  }
+  .app-ui:hover img:nth-child(2) {
+    transform: translate(40px, -40px);
+    opacity: 0.5;
+  }
+  .app-ui:hover img:nth-child(3) {
+    transform: translate(60px, -60px);
+    opacity: 0.7;
+  }
+  .app-ui:hover img:nth-child(4) {
+    transform: translate(80px, -80px);
+  }
+}

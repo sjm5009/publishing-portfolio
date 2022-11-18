@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #eee;
+}
+.container {
+  width: 1380px;
+  text-align: center;
+  position: relative;
+}
+.content {
+  display: inline-block;
+  margin: 0 5px;
+  position: relative;
+  cursor: pointer;
+}
+.content img {
+  width: 250px;
+  height: 235px;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: 0.5s;
+}
+.content p {
+  background-color: #555;
+  position: absolute;
+  top: -48%;
+  left: 0;
+  padding: 12px;
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.content p span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.content p::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #555;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  transform: rotate(45deg);
+}
+.content img:hover {
+  transform: scale(1.1);
+}
+.content img:hover + p {
+  opacity: 1;
+}
+.logo {
+  position: absolute;
+  bottom: -130px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.logo img {
+  width: 150px;
+  height: 80px;
+}
+.logo h1 {
+  color: #222;
+  font-weight: 600;
+  display: inline-block;
+  transform: translateY(-25px);
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: translateX(0);
+    padding: 10px 0 20px;
+  }
+  .logo img,
+  .logo h1 {
+    vertical-align: middle;
+  }
+  .logo img {
+    width: 30%;
+    height: 100%;
+  }
+  .logo h1 {
+    margin: 0;
+    transform: translateY(0);
+  }
+  .content {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .content:nth-child(odd) {
+    text-align: left;
+  }
+  .content:nth-child(even) {
+    text-align: right;
+  }
+  .content img {
+    width: 45%;
+    height: 93%;
+    vertical-align: middle;
+    margin: 0 10px;
+  }
+  .content p {
+    z-index: 10;
+    width: 40%;
+    font-size: 13px;
+    top: 0;
+  }
+  .content:nth-child(odd) p {
+    left: 55%;
+  }
+  .content:nth-child(even) p {
+    left: 5%;
+  }
+  .content p::after {
+    bottom: 50%;
+    transform: rotate(45deg) translateY(-50%);
+  }
+  .content:nth-child(odd) p::after {
+    left: -8px;
+  }
+  .content:nth-child(even) p::after {
+    left: calc(90% + 3px);
+  }
+  .content p span {
+    font-size: 13px;
+  }
+}

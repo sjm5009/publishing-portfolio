@@ -1,0 +1,89 @@
+@import url(../../cdn.css);
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+input[name="tabmenu"] {
+  display: none;
+}
+h1 {
+  margin: 12px 0;
+  margin-top: 0;
+}
+.container {
+  width: 400px;
+  height: 440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.view {
+  width: 250px;
+  height: 365px;
+  position: relative;
+}
+.content {
+  position: absolute;
+  width: inherit;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  top: 0;
+  left: -30px;
+}
+.content img {
+  width: inherit;
+  height: 320px;
+}
+.btn {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+.btn label {
+  display: inline-block;
+  background-color: #ccc;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+input[id="tab1"]:checked ~ .slide1,
+input[id="tab2"]:checked ~ .slide2,
+input[id="tab3"]:checked ~ .slide3 {
+  opacity: 1;
+  visibility: visible;
+  left: 0px;
+}
+input[id="tab1"]:checked ~ .btn label[for="tab1"],
+input[id="tab2"]:checked ~ .btn label[for="tab2"],
+input[id="tab3"]:checked ~ .btn label[for="tab3"] {
+  background-color: #333;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .view {
+    width: 95%;
+  }
+  input[id="tab1"]:checked ~ .slide1,
+  input[id="tab2"]:checked ~ .slide2,
+  input[id="tab3"]:checked ~ .slide3 {
+    left: 5%;
+  }
+}

@@ -1,0 +1,57 @@
+@import url(../../cdn.css);
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  margin: 0;
+  background: #eee;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+li {
+  list-style: none;
+}
+.gnb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 0;
+  padding: 35px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(30, 143, 255, 0.3);
+}
+.gnb li {
+  display: inline-block;
+  width: 130px;
+  text-align: center;
+}
+.gnb a {
+  position: relative;
+}
+.gnb a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  height: 2px;
+  width: 0;
+  background-color: blue;
+  transition: 0.3s;
+  transform: translateX(-50%);
+}
+.gnb a:hover::before {
+  width: 100%;
+}
+@media (max-width: 450px) {
+  .gnb li {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+  }
+}

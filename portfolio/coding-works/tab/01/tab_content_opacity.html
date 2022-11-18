@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Slider</title>
+    <link rel="stylesheet" href="./tab_content_opacity.css" />
+    <script src="/plugin/jquery/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $("#tab1").attr("checked", true);
+      });
+    </script>
+  </head>
+  <body>
+    <section class="container">
+      <h1>July Movie List</h1>
+      <div class="view">
+        <input type="radio" name="tabmenu" id="tab1" />
+        <input type="radio" name="tabmenu" id="tab2" />
+        <input type="radio" name="tabmenu" id="tab3" />
+        <div class="content slide1">
+          <img src="./img/movie_01.jpg" alt="movie_01" />
+        </div>
+        <div class="content slide2">
+          <img src="./img/movie_02.jpg" alt="movie_02" />
+        </div>
+        <div class="content slide3">
+          <img src="./img/movie_03.jpg" alt="movie_03" />
+        </div>
+        <div class="btn">
+          <label for="tab1"></label>
+          <label for="tab2"></label>
+          <label for="tab3"></label>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

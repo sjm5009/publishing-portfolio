@@ -1,0 +1,132 @@
+@import url(/css/cdn.css);
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, #9890e3 0%, #fff1eb 100%);
+}
+.container {
+  animation: intro 1s 1 ease-out both;
+}
+h1 {
+  font-size: 40px;
+  letter-spacing: 15px;
+  color: #655db1;
+  text-transform: uppercase;
+  text-align: center;
+}
+input[name="tab"] {
+  display: none;
+}
+.view {
+  width: 640px;
+  height: 477px;
+  position: relative;
+  overflow: hidden;
+}
+.photo {
+  width: 2560px;
+  height: 427px;
+  font-size: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.photo img {
+  width: 640px;
+  height: 100%;
+}
+.photo img:nth-child(1) {
+  margin-left: 0;
+}
+.btn {
+  position: absolute;
+  bottom: 0px;
+  height: 50px;
+  left: 0;
+  width: inherit;
+  text-align: center;
+  line-height: 50px;
+}
+.btn label {
+  width: 17px;
+  height: 17px;
+  background-color: #ccc;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+input[id="tab1"]:checked ~ .btn label[for="tab1"],
+input[id="tab2"]:checked ~ .btn label[for="tab2"],
+input[id="tab3"]:checked ~ .btn label[for="tab3"],
+input[id="tab4"]:checked ~ .btn label[for="tab4"] {
+  background-color: #faba9f;
+  border-radius: 3px;
+  transform: rotate(45deg);
+}
+input[id="tab1"]:checked ~ .photo {
+  left: 0;
+}
+input[id="tab2"]:checked ~ .photo {
+  left: -640px;
+}
+input[id="tab3"]:checked ~ .photo {
+  left: -1280px;
+}
+input[id="tab4"]:checked ~ .photo {
+  left: -1920px;
+}
+@keyframes intro {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .view {
+    width: 90vw;
+    height: 70vh;
+    margin: auto;
+  }
+  .photo {
+    width: 360vw;
+    height: 60vh;
+  }
+  .photo img {
+    width: 90vw;
+  }
+  input[id="tab1"]:checked ~ .photo {
+    left: 0;
+  }
+  input[id="tab2"]:checked ~ .photo {
+    left: -90vw;
+  }
+  input[id="tab3"]:checked ~ .photo {
+    left: -180vw;
+  }
+  input[id="tab4"]:checked ~ .photo {
+    left: -270vw;
+  }
+}
