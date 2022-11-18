@@ -263,22 +263,30 @@
     --uk-translate-y: 0;
   }
 
-  header {
+  /* ======================== Footer ======================== */
+  footer {
+    background: url(./images/footer-mo-img.png) no-repeat center center;
+  }
+  .github-info {
+    width: 90%;
+  }
+  .github-info span {
     display: block;
   }
-  .home {
+  .github-info span:first-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 620px) and (min-width: 451px) {
+  .github-info {
+    width: 90%;
+  }
+  .github-info span {
     display: block;
   }
-  .about {
-    display: block;
-  }
-  .skills {
-    display: block;
-  }
-  .practical-publishing {
-    display: block;
-  }
-  .web-publishing {
-    display: block;
+  .github-info span:first-child {
+    margin-bottom: 0;
+    margin-right: 0;
   }
 }
