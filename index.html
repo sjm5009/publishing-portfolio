@@ -18,6 +18,7 @@
     <script src="custom.js"></script>
   </head>
   <body>
+    <!-- Header -->
     <header>
       <div class="header-wrap section-inner">
         <div class="logo">
@@ -28,11 +29,12 @@
           <a href="#skills"><span>skills</span></a>
           <a href="#practical-publishing"><span>practical publishing</span></a>
           <a href="#web-publishing"><span>web publishing</span></a>
-          <a href="#git-hub"><span>GitHub</span></a>
+          <a href="#practical-react"><span>practical react</span></a>
         </nav>
       </div>
       <div class="nav-btn"><span></span><span></span><span></span></div>
     </header>
+    <!-- Section : Home -->
     <section id="home" class="home">
       <div class="home-wrap section-inner">
         <div class="home-text">
@@ -64,6 +66,7 @@
         <img src="/images/me.png" />
       </div>
     </section>
+    <!-- Section : About -->
     <section id="about" class="about">
       <div class="about-wrap section-inner">
         <div class="section-title">
@@ -139,6 +142,7 @@
         </div>
       </div>
     </section>
+    <!-- Section : Skill -->
     <section id="skills" class="skills">
       <div class="skill-wrap section-inner">
         <div class="section-title">
@@ -185,6 +189,7 @@
         </div>
       </div>
     </section>
+    <!-- Section : Practical Publishing -->
     <section id="practical-publishing" class="practical-publishing">
       <div class="practical-wrap section-inner">
         <div class="section-title">
@@ -340,6 +345,7 @@
         </div>
       </div>
     </section>
+    <!-- Section : Web Publishing -->
     <section id="web-publishing" class="web-publishing">
       <div class="web-wrap section-inner">
         <div class="section-title">
@@ -495,7 +501,54 @@
         </div>
       </div>
     </section>
-    <footer id="git-hub">
+    <!-- Section : Practical React -->
+    <section id="practical-react" class="practical-react">
+      <div class="section-inner">
+        <div class="section-title">
+          <h1>practical react</h1>
+        </div>
+        <div class="web-work">
+          <img src="./images/practical-react/mockup-t1.png" alt="Practical React Mockup Image" />
+          <div class="work-desc">
+            <h2>T1 관리자 상품등록</h2>
+            <p><em>작업 기간</em><span>10일</span></p>
+            <p><em>작업 참여도</em><span>100%</span></p>
+            <p>
+              <em>제작 방식</em>
+              <span>HTML + CSS(Flex) + Javascript + React Hooks + <br />Firebase + Cloudinary + Netlify</span>
+            </p>
+            <p>
+              <em>GitHub</em
+              ><span
+                ><a class="github-addr" href="https://github.com/sjm5009/t1" target="_blank"
+                  >https://github.com/sjm5009/t1</a
+                ></span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="modal-btns">
+          <a class="uk-button uk-button-default" href="#react-t1" uk-toggle>Open React Web</a>
+          <div id="react-t1" class="uk-modal-full" uk-modal>
+            <div class="uk-modal-dialog">
+              <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+              <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                <div class="uk-width-expand">
+                  <iframe
+                    src="https://t1-shop.netlify.app/"
+                    frameborder="0"
+                    uk-height-viewport
+                    uk-width-viewport
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
       <div class="footer-dim">
         <div class="github-info">
           <span>포트폴리오 소스가</span><span>궁금하시다면</span>

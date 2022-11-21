@@ -442,6 +442,11 @@ nav span::after {
 }
 
 /* ======================== Section : Web Publishing ======================== */
+.web-publishing {
+  background-color: #fff5ee6b;
+  margin-top: 80px;
+  padding-bottom: 20px;
+}
 .web-wrap {
   position: relative;
 }
@@ -518,6 +523,7 @@ nav span::after {
   width: 60%;
   text-align: left;
   padding-left: 10px;
+  vertical-align: top;
 }
 .work-desc em:after {
   content: "";
@@ -574,6 +580,21 @@ nav span::after {
 }
 .effect-right {
   animation: effect-right 1s ease-out both;
+}
+
+/* ======================== Section : Practical React ======================== */
+.practical-react .section-inner {
+  text-align: center;
+}
+.practical-react img {
+  width: 800px;
+  height: 390px;
+}
+.practical-react .work-desc p:nth-of-type(3) span {
+  margin-left: -4px;
+}
+.github-addr {
+  color: dodgerblue;
 }
 
 /* ======================== Footer ======================== */

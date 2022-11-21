@@ -266,6 +266,14 @@
     --uk-translate-y: 0;
   }
 
+  /* ======================== Section : Practical React ======================== */
+  .practical-react .section-inner {
+    width: 100%;
+  }
+  .practical-react .uk-button {
+    margin: 0;
+  }
+
   /* ======================== Footer ======================== */
   footer {
     background: url(./images/footer-mo-img.png) no-repeat center center;
