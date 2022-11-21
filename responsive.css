@@ -6,6 +6,9 @@
   body.active {
     overflow: hidden;
   }
+  .top {
+    right: 20px;
+  }
 
   /* ======================== Header ======================== */
   .header-wrap {

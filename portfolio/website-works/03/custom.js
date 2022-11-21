@@ -61,6 +61,7 @@ $(function () {
       }
     );
   });
+  // 하위메뉴 클릭 이벤트
   $(".mobile-menu-item").click(function () {
     // 하위 메뉴로 슬라이드
     let parentWidth = $(".menu-view").innerWidth();
@@ -74,6 +75,7 @@ $(function () {
     let dataPath = $(this).attr("data-path");
     $(`#${dataPath}`).addClass("active");
   });
+  // 메뉴 모달 열고닫기 버튼 클릭 이벤트
   $(".trigger").click(function () {
     $(this).toggleClass("active");
     $(".mobile-menu").toggleClass("active");
@@ -81,6 +83,10 @@ $(function () {
     let flag = $(this).hasClass("active");
     if (flag) {
       hideSearchForm();
+    } else {
+      $(".menu-step.step2 .mobile-menu-items-list").removeClass("active");
+      $(".menu-step.step3 .mobile-menu-items-list").removeClass("active");
+      $(".menu-steps").css({ left: 0 });
     }
   });
 

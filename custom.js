@@ -1,15 +1,17 @@
 $(function () {
-  $(window).resize(function () {
-    let viewWidth = window.innerWidth;
-    if (viewWidth > 500) {
-      $(".modal-btns .iloom-mobile").attr("href", "#iloom-full-m");
-      $(".modal-btns .art-mobile").attr("href", "#art-full-m");
-      $(".modal-btns .kolon-mobile").attr("href", "#kolon-full-m");
+  /* 스크롤 이벤트 */
+  $(window).scroll(function () {
+    if (window.scrollY > 100) {
+      $(".top").addClass("active");
     } else {
-      $(".modal-btns .iloom-mobile").attr("href", "#iloom-full-w");
-      $(".modal-btns .art-mobile").attr("href", "#art-full-w");
-      $(".modal-btns .kolon-mobile").attr("href", "#kolon-full-w");
+      $(".top").removeClass("active");
     }
+  });
+  setProjectLink();
+
+  /* 화면크기 바뀌 었을때 WebPublishing 모바일 영역 연결 속성 바꾸기 */
+  $(window).resize(function () {
+    setProjectLink();
   });
 
   /* Header */
@@ -89,3 +91,18 @@ $(function () {
     }
   });
 });
+
+/* 곧통함수 */
+// WebPublishing 모바일 영역 연결 속성 바꾸기
+function setProjectLink() {
+  let viewWidth = window.innerWidth;
+  if (viewWidth > 500) {
+    $(".modal-btns .iloom-mobile").attr("href", "#iloom-full-m");
+    $(".modal-btns .art-mobile").attr("href", "#art-full-m");
+    $(".modal-btns .kolon-mobile").attr("href", "#kolon-full-m");
+  } else {
+    $(".modal-btns .iloom-mobile").attr("href", "#iloom-full-w");
+    $(".modal-btns .art-mobile").attr("href", "#art-full-w");
+    $(".modal-btns .kolon-mobile").attr("href", "#kolon-full-w");
+  }
+}
